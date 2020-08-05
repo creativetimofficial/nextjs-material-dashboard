@@ -1,34 +1,35 @@
 {
   "name": "nextjs-material-dashboard",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@material-ui/core": "4.10.0",
+    "@material-ui/icons": "4.9.1",
+    "@zeit/next-css": "1.0.1",
+    "@zeit/next-sass": "1.0.1",
+    "chartist": "0.10.1",
+    "classnames": "2.2.6",
+    "history": "4.10.1",
+    "next": "9.3.5",
+    "next-compose-plugins": "2.2.0",
+    "next-images": "1.3.1",
+    "path": "0.12.7",
+    "perfect-scrollbar": "1.5.0",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-chartist": "0.14.3",
+    "react-dom": "16.13.1",
+    "react-google-maps": "9.4.5",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.4.1",
+    "react-swipeable-views": "0.13.9",
+    "webpack": "4.43.0"
   }
 }
