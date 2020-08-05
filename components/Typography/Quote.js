@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import styles from "assets/jss/material-dashboard-react/components/typographyStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/components/typographyStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -20,5 +20,5 @@ export default function Quote(props) {
 
 Quote.propTypes = {
   text: PropTypes.node,
-  author: PropTypes.node
+  author: PropTypes.node,
 };

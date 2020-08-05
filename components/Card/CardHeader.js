@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import styles from "assets/jss/material-dashboard-react/components/cardHeaderStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/components/cardHeaderStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -21,7 +21,7 @@ export default function CardHeader(props) {
     [classes.cardHeaderPlain]: plain,
     [classes.cardHeaderStats]: stats,
     [classes.cardHeaderIcon]: icon,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div className={cardHeaderClasses} {...rest}>
@@ -38,10 +38,10 @@ CardHeader.propTypes = {
     "danger",
     "info",
     "primary",
-    "rose"
+    "rose",
   ]),
   plain: PropTypes.bool,
   stats: PropTypes.bool,
   icon: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 };

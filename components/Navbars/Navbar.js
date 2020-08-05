@@ -14,25 +14,25 @@ import AdminNavbarLinks from "./AdminNavbarLinks.js";
 import RTLNavbarLinks from "./RTLNavbarLinks.js";
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "assets/jss/material-dashboard-react/components/headerStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/components/headerStyle.js";
 
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
   const classes = useStyles();
   function makeBrand() {
-    var name;
-    props.routes.map(prop => {
-      if (window.location.href.indexOf(prop.layout + prop.path) !== -1) {
-        name = props.rtlActive ? prop.rtlName : prop.name;
-      }
-      return null;
-    });
+    var name = "NextJS Material Dashboard";
+    // props.routes.map((prop) => {
+    //   if (window.location.href.indexOf(prop.layout + prop.path) !== -1) {
+    //     name = props.rtlActive ? prop.rtlName : prop.name;
+    //   }
+    //   return null;
+    // });
     return name;
   }
   const { color } = props;
   const appBarClasses = classNames({
-    [" " + classes[color]]: color
+    [" " + classes[color]]: color,
   });
   return (
     <AppBar className={classes.appBar + appBarClasses}>
@@ -64,5 +64,5 @@ Header.propTypes = {
   color: PropTypes.oneOf(["primary", "info", "success", "warning", "danger"]),
   rtlActive: PropTypes.bool,
   handleDrawerToggle: PropTypes.func,
-  routes: PropTypes.arrayOf(PropTypes.object)
+  routes: PropTypes.arrayOf(PropTypes.object),
 };

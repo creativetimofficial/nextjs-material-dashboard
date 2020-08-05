@@ -5,8 +5,8 @@ import {
   infoCardHeader,
   primaryCardHeader,
   roseCardHeader,
-  grayColor
-} from "assets/jss/material-dashboard-react.js";
+  grayColor,
+} from "assets/jss/nextjs-material-dashboard.js";
 
 const cardIconStyle = {
   cardIcon: {
@@ -16,15 +16,15 @@ const cardIconStyle = {
       padding: "15px",
       marginTop: "-20px",
       marginRight: "15px",
-      float: "left"
-    }
+      float: "left",
+    },
   },
   warningCardHeader,
   successCardHeader,
   dangerCardHeader,
   infoCardHeader,
   primaryCardHeader,
-  roseCardHeader
+  roseCardHeader,
 };
 
 export default cardIconStyle;

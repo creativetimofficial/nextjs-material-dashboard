@@ -2,18 +2,18 @@ import {
   boxShadow,
   whiteColor,
   grayColor,
-  hexToRgb
-} from "assets/jss/material-dashboard-react.js";
+  hexToRgb,
+} from "assets/jss/nextjs-material-dashboard.js";
 
 const iconsStyle = {
   iframe: {
     width: "100%",
     height: "500px",
     border: "0",
-    ...boxShadow
+    ...boxShadow,
   },
   iframeContainer: {
-    margin: "0 -20px 0"
+    margin: "0 -20px 0",
   },
   cardCategoryWhite: {
     "&,& a,& a:hover,& a:focus": {
@@ -21,11 +21,11 @@ const iconsStyle = {
       margin: "0",
       fontSize: "14px",
       marginTop: "0",
-      marginBottom: "0"
+      marginBottom: "0",
     },
     "& a,& a:hover,& a:focus": {
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   cardTitleWhite: {
     color: whiteColor,
@@ -38,9 +38,9 @@ const iconsStyle = {
     "& small": {
       color: grayColor[1],
       fontWeight: "400",
-      lineHeight: "1"
-    }
-  }
+      lineHeight: "1",
+    },
+  },
 };
 
 export default iconsStyle;

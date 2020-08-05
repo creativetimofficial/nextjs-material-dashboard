@@ -1,5 +1,4 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
@@ -13,7 +12,7 @@ import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routes from "routes.js";
 
-import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/layouts/adminStyle.js";
 
 import bgImage from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/reactlogo.png";
@@ -32,10 +31,10 @@ export default function Admin({ children, ...rest }) {
   const [color, setColor] = React.useState("blue");
   const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const handleImageClick = image => {
+  const handleImageClick = (image) => {
     setImage(image);
   };
-  const handleColorClick = color => {
+  const handleColorClick = (color) => {
     setColor(color);
   };
   const handleFixedClick = () => {
@@ -49,29 +48,30 @@ export default function Admin({ children, ...rest }) {
     setMobileOpen(!mobileOpen);
   };
   const getRoute = () => {
-    return window.location.pathname !== "/admin/maps";
+    return true;
+    // return window.location.pathname !== "/admin/maps";
   };
-  const resizeFunction = () => {
-    if (window.innerWidth >= 960) {
-      setMobileOpen(false);
-    }
-  };
+  // const resizeFunction = () => {
+  //   if (window.innerWidth >= 960) {
+  //     setMobileOpen(false);
+  //   }
+  // };
   // initialize and destroy the PerfectScrollbar plugin
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(mainPanel.current, {
         suppressScrollX: true,
-        suppressScrollY: false
+        suppressScrollY: false,
       });
       document.body.style.overflow = "hidden";
     }
-    window.addEventListener("resize", resizeFunction);
+    // window.addEventListener("resize", resizeFunction);
     // Specify how to clean up after this effect:
     return function cleanup() {
       if (navigator.platform.indexOf("Win") > -1) {
         ps.destroy();
       }
-      window.removeEventListener("resize", resizeFunction);
+      // window.removeEventListener("resize", resizeFunction);
     };
   }, [mainPanel]);
   return (

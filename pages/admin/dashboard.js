@@ -36,10 +36,10 @@ import { bugs, website, server } from "variables/general.js";
 import {
   dailySalesChart,
   emailsSubscriptionChart,
-  completedTasksChart
+  completedTasksChart,
 } from "variables/charts.js";
 
-import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/views/dashboardStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -64,7 +64,7 @@ function Dashboard() {
                 <Danger>
                   <Warning />
                 </Danger>
-                <a href="#pablo" onClick={e => e.preventDefault()}>
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   Get more space
                 </a>
               </div>
@@ -212,7 +212,7 @@ function Dashboard() {
                     tasksIndexes={[0, 1, 2, 3]}
                     tasks={bugs}
                   />
-                )
+                ),
               },
               {
                 tabName: "Website",
@@ -223,7 +223,7 @@ function Dashboard() {
                     tasksIndexes={[0, 1]}
                     tasks={website}
                   />
-                )
+                ),
               },
               {
                 tabName: "Server",
@@ -234,8 +234,8 @@ function Dashboard() {
                     tasksIndexes={[0, 1, 2]}
                     tasks={server}
                   />
-                )
-              }
+                ),
+              },
             ]}
           />
         </GridItem>
@@ -255,7 +255,7 @@ function Dashboard() {
                   ["1", "Dakota Rice", "$36,738", "Niger"],
                   ["2", "Minerva Hooper", "$23,789", "Curaçao"],
                   ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                  ["4", "Philip Chaney", "$38,735", "Korea, South"]
+                  ["4", "Philip Chaney", "$38,735", "Korea, South"],
                 ]}
               />
             </CardBody>

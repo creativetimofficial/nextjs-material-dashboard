@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 // core components
 
-import styles from "assets/jss/material-dashboard-react/components/cardAvatarStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/components/cardAvatarStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -19,7 +19,7 @@ export default function CardAvatar(props) {
     [classes.cardAvatar]: true,
     [classes.cardAvatarProfile]: profile,
     [classes.cardAvatarPlain]: plain,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div className={cardAvatarClasses} {...rest}>
@@ -32,5 +32,5 @@ CardAvatar.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   profile: PropTypes.bool,
-  plain: PropTypes.bool
+  plain: PropTypes.bool,
 };

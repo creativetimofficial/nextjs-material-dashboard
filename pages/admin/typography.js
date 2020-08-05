@@ -19,7 +19,7 @@ const styles = {
   typo: {
     paddingLeft: "25%",
     marginBottom: "40px",
-    position: "relative"
+    position: "relative",
   },
   note: {
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
@@ -32,14 +32,14 @@ const styles = {
     left: "0",
     marginLeft: "20px",
     position: "absolute",
-    width: "260px"
+    width: "260px",
   },
   cardCategoryWhite: {
     color: "rgba(255,255,255,.62)",
     margin: "0",
     fontSize: "14px",
     marginTop: "0",
-    marginBottom: "0"
+    marginBottom: "0",
   },
   cardTitleWhite: {
     color: "#FFFFFF",
@@ -48,8 +48,8 @@ const styles = {
     fontWeight: "300",
     fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
     marginBottom: "3px",
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+  },
 };
 
 const useStyles = makeStyles(styles);

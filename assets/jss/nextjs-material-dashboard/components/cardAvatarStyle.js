@@ -1,11 +1,11 @@
-import { hexToRgb, blackColor } from "assets/jss/material-dashboard-react.js";
+import { hexToRgb, blackColor } from "assets/jss/nextjs-material-dashboard.js";
 
 const cardAvatarStyle = {
   cardAvatar: {
     "&$cardAvatarProfile img": {
       width: "100%",
-      height: "auto"
-    }
+      height: "auto",
+    },
   },
   cardAvatarProfile: {
     maxWidth: "130px",
@@ -23,10 +23,10 @@ const cardAvatarStyle = {
       hexToRgb(blackColor) +
       ", 0.2)",
     "&$cardAvatarPlain": {
-      marginTop: "0"
-    }
+      marginTop: "0",
+    },
   },
-  cardAvatarPlain: {}
+  cardAvatarPlain: {},
 };
 
 export default cardAvatarStyle;

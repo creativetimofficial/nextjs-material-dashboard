@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import styles from "assets/jss/material-dashboard-react/components/cardFooterStyle.js";
+import styles from "assets/jss/nextjs-material-dashboard/components/cardFooterStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -21,7 +21,7 @@ export default function CardFooter(props) {
     [classes.cardFooterProfile]: profile,
     [classes.cardFooterStats]: stats,
     [classes.cardFooterChart]: chart,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div className={cardFooterClasses} {...rest}>
@@ -36,5 +36,5 @@ CardFooter.propTypes = {
   profile: PropTypes.bool,
   stats: PropTypes.bool,
   chart: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 };

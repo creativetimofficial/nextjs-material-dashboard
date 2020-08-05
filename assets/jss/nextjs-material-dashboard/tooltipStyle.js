@@ -1,4 +1,4 @@
-import { blackColor, hexToRgb } from "assets/jss/material-dashboard-react.js";
+import { blackColor, hexToRgb } from "assets/jss/nextjs-material-dashboard.js";
 
 const tooltipStyle = {
   tooltip: {
@@ -28,7 +28,7 @@ const tooltipStyle = {
     wordSpacing: "normal",
     wordWrap: "normal",
     whiteSpace: "normal",
-    lineBreak: "auto"
-  }
+    lineBreak: "auto",
+  },
 };
 export default tooltipStyle;
