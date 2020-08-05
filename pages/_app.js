@@ -80,7 +80,7 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>NextJS Material Kit by Creative Tim</title>
+          <title>NextJS Material Dashboard by Creative Tim</title>
         </Head>
         <Layout>
           <Component {...pageProps} />
