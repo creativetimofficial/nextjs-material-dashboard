@@ -1,18 +1,18 @@
 /*!
 
- =========================================================
- * Material Dashboard React - v1.9.0 based on Material Dashboard - v1.2.0
- =========================================================
+=========================================================
+* Material Dashboard React - v1.9.0 based on Material Dashboard - v1.2.0
+=========================================================
 
- * Product Page: http://www.creative-tim.com/product/material-dashboard-react
- * Copyright 2020 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
+* Product Page: http://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2020 Creative Tim (http://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
 
- =========================================================
+=========================================================
 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
- */
+*/
 .ct-grid {
   stroke: rgba(255, 255, 255, 0.2);
   stroke-width: 1px;
@@ -508,4 +508,38 @@ footer ul li a:hover {
 }
 * {
   letter-spacing: normal !important;
+}
+.body-page-transition {
+  overflow: hidden;
+}
+.body-page-transition #page-transition {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.body-page-transition #page-transition > div:after {
+  content: "";
+  background-image: url("../img/bg7.jpg");
+  background-size: cover;
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.body-page-transition #page-transition > div:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  z-index: 9999;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
 }
