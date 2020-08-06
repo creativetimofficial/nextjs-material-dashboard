@@ -23,6 +23,7 @@ let ps;
 const useStyles = makeStyles(styles);
 
 export default function Admin({ children, ...rest }) {
+  // used for checking current route
   const router = useRouter();
   // styles
   const classes = useStyles();
@@ -52,11 +53,11 @@ export default function Admin({ children, ...rest }) {
   const getRoute = () => {
     return router.pathname !== "/admin/maps";
   };
-  // const resizeFunction = () => {
-  //   if (window.innerWidth >= 960) {
-  //     setMobileOpen(false);
-  //   }
-  // };
+  const resizeFunction = () => {
+    if (window.innerWidth >= 960) {
+      setMobileOpen(false);
+    }
+  };
   // initialize and destroy the PerfectScrollbar plugin
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
@@ -66,13 +67,13 @@ export default function Admin({ children, ...rest }) {
       });
       document.body.style.overflow = "hidden";
     }
-    // window.addEventListener("resize", resizeFunction);
+    window.addEventListener("resize", resizeFunction);
     // Specify how to clean up after this effect:
     return function cleanup() {
       if (navigator.platform.indexOf("Win") > -1) {
         ps.destroy();
       }
-      // window.removeEventListener("resize", resizeFunction);
+      window.removeEventListener("resize", resizeFunction);
     };
   }, [mainPanel]);
   return (
