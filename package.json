@@ -14,7 +14,7 @@
     "@material-ui/icons": "4.9.1",
     "@zeit/next-css": "1.0.1",
     "@zeit/next-sass": "1.0.1",
-    "chartist": "0.11.4",
+    "chartist": "0.10.1",
     "classnames": "2.2.6",
     "history": "5.0.0",
     "next": "9.5.1",
@@ -46,5 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "optionalDependencies": {
+    "@types/googlemaps": "3.39.11",
+    "@types/markerclustererplus": "2.1.33",
+    "node-sass": "4.14.1",
+    "typescript": "3.9.7"
   }
 }
