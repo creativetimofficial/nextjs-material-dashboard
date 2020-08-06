@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from 'next/router'
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
@@ -22,6 +23,7 @@ let ps;
 const useStyles = makeStyles(styles);
 
 export default function Admin({ children, ...rest }) {
+  const router = useRouter();
   // styles
   const classes = useStyles();
   // ref to help us initialize PerfectScrollbar on windows devices
@@ -48,8 +50,7 @@ export default function Admin({ children, ...rest }) {
     setMobileOpen(!mobileOpen);
   };
   const getRoute = () => {
-    return true;
-    // return window.location.pathname !== "/admin/maps";
+    return router.pathname !== "/admin/maps";
   };
   // const resizeFunction = () => {
   //   if (window.innerWidth >= 960) {
