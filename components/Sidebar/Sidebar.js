@@ -48,7 +48,17 @@ export default function Sidebar(props) {
           [" " + classes.whiteFont]: activeRoute(prop.layout + prop.path),
         });
         return (
-          <Link href={prop.layout + prop.path} key={key}>
+          <Link
+            href={prop.layout + prop.path}
+            as={
+              (process.env.NODE_ENV === "production"
+                ? "/nextjs-material-kit"
+                : "") +
+              prop.layout +
+              prop.path
+            }
+            key={key}
+          >
             <a className={activePro + classes.item}>
               <ListItem button className={classes.itemLink + listItemClasses}>
                 {typeof prop.icon === "string" ? (

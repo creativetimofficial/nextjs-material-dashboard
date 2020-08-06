@@ -6,6 +6,8 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = withPlugins([[withSass], [withImages], [withCSS]], {
+  assetPrefix:
+    process.env.NODE_ENV === "production" ? "/nextjs-material-dashboard" : "",
   webpack(config, options) {
     config.resolve.modules.push(path.resolve("./"));
     return config;
