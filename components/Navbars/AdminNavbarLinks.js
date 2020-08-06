@@ -66,9 +66,9 @@ export default function AdminNavbarLinks() {
         </Button>
       </div>
       <Button
-        color={window.innerWidth > 959 ? "transparent" : "white"}
-        justIcon={window.innerWidth > 959}
-        simple={!(window.innerWidth > 959)}
+        color={typeof window !== "undefined" &&window.innerWidth > 959 ? "transparent" : "white"}
+        justIcon={typeof window !== "undefined" &&window.innerWidth > 959}
+        simple={typeof window !== "undefined" &&!(window.innerWidth > 959)}
         aria-label="Dashboard"
         className={classes.buttonLink}
       >
@@ -79,9 +79,9 @@ export default function AdminNavbarLinks() {
       </Button>
       <div className={classes.manager}>
         <Button
-          color={window.innerWidth > 959 ? "transparent" : "white"}
-          justIcon={window.innerWidth > 959}
-          simple={!(window.innerWidth > 959)}
+          color={typeof window !== "undefined" &&window.innerWidth > 959 ? "transparent" : "white"}
+          justIcon={typeof window !== "undefined" &&window.innerWidth > 959}
+          simple={typeof window !== "undefined" &&!(window.innerWidth > 959)}
           aria-owns={openNotification ? "notification-menu-list-grow" : null}
           aria-haspopup="true"
           onClick={handleClickNotification}
@@ -157,9 +157,9 @@ export default function AdminNavbarLinks() {
       </div>
       <div className={classes.manager}>
         <Button
-          color={window.innerWidth > 959 ? "transparent" : "white"}
-          justIcon={window.innerWidth > 959}
-          simple={!(window.innerWidth > 959)}
+          color={typeof window !== "undefined" &&window.innerWidth > 959 ? "transparent" : "white"}
+          justIcon={typeof window !== "undefined" &&window.innerWidth > 959}
+          simple={typeof window !== "undefined" &&!(window.innerWidth > 959)}
           aria-owns={openProfile ? "profile-menu-list-grow" : null}
           aria-haspopup="true"
           onClick={handleClickProfile}

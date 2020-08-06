@@ -2,12 +2,18 @@
   "name": "nextjs-material-dashboard",
   "version": "1.0.0",
   "private": true,
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/nextjs-material-dashboard/issues"
+  },
+  "homepage": "https://demos.creative-tim.com/nextjs-material-dashboard",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && rm -rf out/ && npm install && npm run build && npm run export && touch out/.nojekyll && git add . && git commit -m \"ready to deploy\" && git push && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@material-ui/core": "4.11.0",
