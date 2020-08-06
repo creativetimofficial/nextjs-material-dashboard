@@ -57,6 +57,41 @@ class MyDocument extends Document {
             sizes="76x76"
             href={require("assets/img/apple-icon.png")}
           />
+          {/* Extra details for Live View on GitHub Pages */}
+  {/* Canonical SEO */}
+  <link rel="canonical" href="https://www.creative-tim.com/product/nextjs-material-dashboard" />
+
+
+  {/*  Social tags      */}
+  <meta name="keywords" content="creative tim, react dashboard, nextjs dashboard, react nextjs dashboard, web dashboard, material-ui dashboard, material-ui, css3 dashboard, nextjs admin, nextjs dashboard material ui dashboard, frontend, responsive nextjs dashboard, material design, nextjs dashboard react dashboard">
+  <meta name="description" content="NextJS Material Dashboard is a free Material-UI, NextJS and React Admin with a fresh, new design inspired by Google's Material Design.">
+
+
+  {/* Schema.org markup for Google+ */}
+  <meta itemprop="name" content="NextJS Material Dashboard by Creative Tim">
+  <meta itemprop="description" content="NextJS Material Dashboard is a free Material-UI, NextJS and React Admin with a fresh, new design inspired by Google's Material Design.">
+
+  <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_md_nextjs_thumbnail.jpg">
+
+
+  {/* Twitter Card data */}
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content="@creativetim">
+  <meta name="twitter:title" content="NextJS Material Dashboard by Creative Tim">
+
+  <meta name="twitter:description" content="NextJS Material Dashboard is a free Material-UI, NextJS and React Admin with a fresh, new design inspired by Google's Material Design.">
+  <meta name="twitter:creator" content="@creativetim">
+  <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_md_nextjs_thumbnail.jpg">
+
+
+  {/* Open Graph data */}
+  <meta property="fb:app_id" content="655968634437471">
+  <meta property="og:title" content="NextJS Material Dashboard by Creative Tim" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard" />
+  <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_md_nextjs_thumbnail.jpg"/>
+  <meta property="og:description" content="NextJS Material Dashboard is a free Material-UI, NextJS and React Admin with a fresh, new design inspired by Google's Material Design." />
+  <meta property="og:site_name" content="Creative Tim" />
           {/* Fonts and icons */}
           <link
             rel="stylesheet"
