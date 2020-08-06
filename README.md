@@ -38,16 +38,20 @@ You can find the Github Repo here.
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg" width="60" height="60" />](https://www.creative-tim.com/product/nextjs-material-dashboard)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nodejs-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-laravel)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/vuetify-material-dashboard)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
 
 
-| HTML | React | Vue | Angular |
-| --- | --- | --- | --- |
-| [![Material Dashboard HTML](src/assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard React](src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard ](src/assets/github/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
+| NextJS | NodeJS | Laravel | Vue & Laravel | Vuetify |
+| --- | --- | --- | --- | --- |
+| [![ NextJS Material Dashboard ](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/nextjs-material-dashboard) | [![Material Dashboard React NodeJS ](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-nodejs) | [![Material Dashboard Laravel ](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-laravel) | [![Vue Material Dashboard Laravel ](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel) | [![Vuetify Material Dashboard ](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/vuetify-material-dashboard)
+
+
+| HTML Dark | HTML | React | Vue | Angular |
+| --- | --- | --- | --- | --- |
+| [![Material Dashboard Dark Edition](src/assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-dark) | [![Material Dashboard HTML](src/assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard React](src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard ](src/assets/github/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
 
 ## Demo
 
