@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
+import { useRouter } from "next/router";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -19,15 +20,18 @@ import styles from "assets/jss/nextjs-material-dashboard/components/headerStyle.
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
+  // used for checking current route
+  const router = useRouter();
+  // create styles for this component
   const classes = useStyles();
   function makeBrand() {
     var name = "NextJS Material Dashboard";
-    // props.routes.map((prop) => {
-    //   if (window.location.href.indexOf(prop.layout + prop.path) !== -1) {
-    //     name = props.rtlActive ? prop.rtlName : prop.name;
-    //   }
-    //   return null;
-    // });
+    props.routes.map((prop) => {
+      if (router.route.indexOf(prop.layout + prop.path) !== -1) {
+        name = props.rtlActive ? prop.rtlName : prop.name;
+      }
+      return null;
+    });
     return name;
   }
   const { color } = props;
