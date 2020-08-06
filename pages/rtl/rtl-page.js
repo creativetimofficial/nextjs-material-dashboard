@@ -63,7 +63,7 @@ let server = [
 
 const useStyles = makeStyles(styles);
 
-export default function RTLPage() {
+function RTLPage() {
   const classes = useStyles();
   return (
     <div>
