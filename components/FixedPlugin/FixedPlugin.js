@@ -4,6 +4,13 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classnames from "classnames";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon
+} from "react-share";
+import GitHubButton from "react-github-button";
 
 import imagine1 from "assets/img/sidebar-1.jpg";
 import imagine2 from "assets/img/sidebar-2.jpg";
@@ -172,7 +179,31 @@ export default function FixedPlugin(props) {
               Documentation
             </Button>
           </li>
-          <li className="adjustments-line" />
+            <li className="button-container" style={{marginTop: "16px"}}>
+              <FacebookShareButton url="https://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard">
+                <FacebookIcon size={32} round={true} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url="https://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard"
+                title="Material Dashboard React - Free Bootstrap Admin Template"
+                hashtags={["react", "material-ui"]}
+                via="creativetim"
+              >
+                <TwitterIcon size={32} round={true} />
+              </TwitterShareButton>
+            </li>
+            <li className="button-container">
+              <GitHubButton
+                type="stargazers"
+                namespace="creativetimofficial"
+                repo="nextjs-material-dashboard"
+              />
+              <GitHubButton
+                type="forks"
+                namespace="creativetimofficial"
+                repo="nextjs-material-dashboard"
+              />
+            </li>
         </ul>
       </div>
     </div>
