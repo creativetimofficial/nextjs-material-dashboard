@@ -39,7 +39,7 @@ You can find the Github Repo here.
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nodejs-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-laravel)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/vuetify-material-dashboard)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/html-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/html-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
 [<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
