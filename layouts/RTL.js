@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";

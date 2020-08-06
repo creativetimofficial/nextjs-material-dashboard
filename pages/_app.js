@@ -75,7 +75,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
-    const Layout = Component.layout || (({children}) => <>{children}</>);
+    const Layout = Component.layout || (({ children }) => <>{children}</>);
 
     return (
       <React.Fragment>
