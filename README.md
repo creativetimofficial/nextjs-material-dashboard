@@ -16,7 +16,7 @@ NextJS Material Dashboard was created using [NextJS](https://nextjs.org/?ref=cre
 
 We are very excited to share this dashboard with you and we look forward to hearing your feedback!
 
-You can find the Github Repo here.
+It is open source, and it's Github Repo can be found [here](https://github.com/creativetimofficial/nextjs-material-dashboard).
 
 ## Table of Contents
 
@@ -57,7 +57,7 @@ You can find the Github Repo here.
 
 | Dashboard | User Profile | Tables | Maps | Notification |
 | --- | --- | --- | --- | --- |
-| [![Start page](src/assets/github/dashboard.png)](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard) | [![User profile page](src/assets/github/user_profile.png)](https://demos.creative-tim.com/nextjs-material-dashboard/user-profile) | [![Tables page ](src/assets/github/tables.png)](https://demos.creative-tim.com/nextjs-material-dashboard/table-list) | [![Maps Page](src/assets/github/maps.png)](https://demos.creative-tim.com/nextjs-material-dashboard/maps) | [![Notification page](src/assets/github/notification.png)](https://demos.creative-tim.com/nextjs-material-dashboard/notifications)
+| [![Start page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/dashboard.png)](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard) | [![User profile page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/user_profile.png)](https://demos.creative-tim.com/nextjs-material-dashboard/user-profile) | [![Tables page ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/tables.png)](https://demos.creative-tim.com/nextjs-material-dashboard/table-list) | [![Maps Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/maps.png)](https://demos.creative-tim.com/nextjs-material-dashboard/maps) | [![Notification page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/notification.png)](https://demos.creative-tim.com/nextjs-material-dashboard/notifications)
 
 [View More](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard).
 
