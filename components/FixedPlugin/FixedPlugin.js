@@ -8,7 +8,7 @@ import {
   FacebookShareButton,
   TwitterShareButton,
   FacebookIcon,
-  TwitterIcon
+  TwitterIcon,
 } from "react-share";
 import GitHubButton from "react-github-button";
 
@@ -179,31 +179,31 @@ export default function FixedPlugin(props) {
               Documentation
             </Button>
           </li>
-            <li className="button-container" style={{marginTop: "16px"}}>
-              <FacebookShareButton url="https://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard">
-                <FacebookIcon size={32} round={true} />
-              </FacebookShareButton>
-              <TwitterShareButton
-                url="https://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard"
-                title="Material Dashboard React - Free Bootstrap Admin Template"
-                hashtags={["react", "material-ui"]}
-                via="creativetim"
-              >
-                <TwitterIcon size={32} round={true} />
-              </TwitterShareButton>
-            </li>
-            <li className="button-container">
-              <GitHubButton
-                type="stargazers"
-                namespace="creativetimofficial"
-                repo="nextjs-material-dashboard"
-              />
-              <GitHubButton
-                type="forks"
-                namespace="creativetimofficial"
-                repo="nextjs-material-dashboard"
-              />
-            </li>
+          <li className="button-container" style={{ marginTop: "16px" }}>
+            <FacebookShareButton url="https://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard">
+              <FacebookIcon size={32} round={true} />
+            </FacebookShareButton>
+            <TwitterShareButton
+              url="https://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard"
+              title="Material Dashboard React - Free Bootstrap Admin Template"
+              hashtags={["react", "material-ui"]}
+              via="creativetim"
+            >
+              <TwitterIcon size={32} round={true} />
+            </TwitterShareButton>
+          </li>
+          <li className="button-container">
+            <GitHubButton
+              type="stargazers"
+              namespace="creativetimofficial"
+              repo="nextjs-material-dashboard"
+            />
+            <GitHubButton
+              type="forks"
+              namespace="creativetimofficial"
+              repo="nextjs-material-dashboard"
+            />
+          </li>
         </ul>
       </div>
     </div>
