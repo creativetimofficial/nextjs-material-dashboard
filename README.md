@@ -1,10 +1,10 @@
-# [Material Dashboard React](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fmaterial-dashboard-react&text=Material%20Dashboard%20React%20-%20Free%20Bootstrap%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fmaterial-dashboard-react%2F%3F_ga%3D2.10428917.198078103.1532329372-1803433978.1528781151&via=creativetim&hashtags=react%2Cmaterial-ui)
+# [Material Dashboard React](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fnextjs-material-dashboard&text=NextJS%20Material%20Dashboard%20-%20Free%20NextJS%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-dashboard%2F%3F_ga%3D2.10428917.198078103.1532329372-1803433978.1528781151&via=creativetim&hashtags=react%2Cmaterial-ui)
 
 
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-material-dashboard.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-material-dashboard.svg?maxAge=2592000)]() [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/material-dashboard?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-![Product Gif](src/assets/github/md-react.gif)
+![Product Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/opt_md_nextjs_thumbnail.jpg)
 
 NextJS Material Dashboard is a free Material-UI, NextJS and React Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. NextJS Material Dashboard was built over the popular Material-UI, NextJS and React frameworks.
 
@@ -57,23 +57,23 @@ You can find the Github Repo here.
 
 | Dashboard | User Profile | Tables | Maps | Notification |
 | --- | --- | --- | --- | --- |
-| [![Start page](src/assets/github/dashboard.png)](https://demos.creative-tim.com/material-dashboard-react/#/dashboard) | [![User profile page](src/assets/github/user_profile.png)](https://demos.creative-tim.com/material-dashboard-react/#/user) | [![Tables page ](src/assets/github/tables.png)](https://demos.creative-tim.com/material-dashboard-react/#/table) | [![Maps Page](src/assets/github/maps.png)](https://demos.creative-tim.com/material-dashboard-react/#/maps) | [![Notification page](src/assets/github/notification.png)](https://demos.creative-tim.com/material-dashboard-react/#/notifications)
+| [![Start page](src/assets/github/dashboard.png)](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard) | [![User profile page](src/assets/github/user_profile.png)](https://demos.creative-tim.com/nextjs-material-dashboard/user-profile) | [![Tables page ](src/assets/github/tables.png)](https://demos.creative-tim.com/nextjs-material-dashboard/table-list) | [![Maps Page](src/assets/github/maps.png)](https://demos.creative-tim.com/nextjs-material-dashboard/maps) | [![Notification page](src/assets/github/notification.png)](https://demos.creative-tim.com/nextjs-material-dashboard/notifications)
 
-[View More](https://demos.creative-tim.com/material-dashboard-react/#/dashboard).
+[View More](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard).
 
 
 ## Quick start
 
 Quick start options:
 
-- `npm i material-dashboard-react`
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard-react.git`.
-- [Download from Github](https://github.com/creativetimofficial/material-dashboard-react/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard-react).
+- `npm i nextjs-material-dashboard`
+- Clone the repo: `git clone https://github.com/creativetimofficial/nextjs-material-dashboard.git`.
+- [Download from Github](https://github.com/creativetimofficial/nextjs-material-dashboard/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/nextjs-material-dashboard).
 
 
 ## Documentation
-The documentation for the Material Dashboard React is hosted at our [website](https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial).
+The documentation for the Material Dashboard React is hosted at our [website](https://demos.creative-tim.com/nextjs-material-dashboard/#/documentation/tutorial).
 
 
 ## File Structure
@@ -81,112 +81,134 @@ The documentation for the Material Dashboard React is hosted at our [website](ht
 Within the download you'll find the following directories and files:
 
 ```
-material-dashboard-react
+nextjs-material-dashboard
 .
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
 ├── README.md
-├── bower.json
-├── gulpfile.js
-├── jsconfig.json
-├── package.json
+├── assets
+│   ├── css
+│   │   └── nextjs-material-dashboard.css
+│   ├── github
+│   │   ├── md-react.gif
+│   │   └── react.svg
+│   ├── img
+│   │   └── faces
+│   └── jss
+│       ├── nextjs-material-dashboard
+│       │   ├── cardImagesStyles.js
+│       │   ├── checkboxAdnRadioStyle.js
+│       │   ├── components
+│       │   │   ├── buttonStyle.js
+│       │   │   ├── cardAvatarStyle.js
+│       │   │   ├── cardBodyStyle.js
+│       │   │   ├── cardFooterStyle.js
+│       │   │   ├── cardHeaderStyle.js
+│       │   │   ├── cardIconStyle.js
+│       │   │   ├── cardStyle.js
+│       │   │   ├── customInputStyle.js
+│       │   │   ├── customTabsStyle.js
+│       │   │   ├── footerStyle.js
+│       │   │   ├── headerLinksStyle.js
+│       │   │   ├── headerStyle.js
+│       │   │   ├── rtlHeaderLinksStyle.js
+│       │   │   ├── sidebarStyle.js
+│       │   │   ├── snackbarContentStyle.js
+│       │   │   ├── tableStyle.js
+│       │   │   ├── tasksStyle.js
+│       │   │   └── typographyStyle.js
+│       │   ├── dropdownStyle.js
+│       │   ├── layouts
+│       │   │   ├── adminStyle.js
+│       │   │   └── rtlStyle.js
+│       │   ├── tooltipStyle.js
+│       │   └── views
+│       │       ├── dashboardStyle.js
+│       │       ├── iconsStyle.js
+│       │       └── rtlStyle.js
+│       └── nextjs-material-dashboard.js
+├── components
+│   ├── Card
+│   │   ├── Card.js
+│   │   ├── CardAvatar.js
+│   │   ├── CardBody.js
+│   │   ├── CardFooter.js
+│   │   ├── CardHeader.js
+│   │   └── CardIcon.js
+│   ├── CustomButtons
+│   │   └── Button.js
+│   ├── CustomInput
+│   │   └── CustomInput.js
+│   ├── CustomTabs
+│   │   └── CustomTabs.js
+│   ├── FixedPlugin
+│   │   └── FixedPlugin.js
+│   ├── Footer
+│   │   └── Footer.js
+│   ├── Grid
+│   │   ├── GridContainer.js
+│   │   └── GridItem.js
+│   ├── Navbars
+│   │   ├── AdminNavbarLinks.js
+│   │   ├── Navbar.js
+│   │   └── RTLNavbarLinks.js
+│   ├── PageChange
+│   │   └── PageChange.js
+│   ├── Sidebar
+│   │   └── Sidebar.js
+│   ├── Snackbar
+│   │   ├── Snackbar.js
+│   │   └── SnackbarContent.js
+│   ├── Table
+│   │   └── Table.js
+│   ├── Tasks
+│   │   └── Tasks.js
+│   └── Typography
+│       ├── Danger.js
+│       ├── Info.js
+│       ├── Muted.js
+│       ├── Primary.js
+│       ├── Quote.js
+│       ├── Success.js
+│       └── Warning.js
 ├── documentation
 │   ├── assets
 │   │   ├── css
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── demo-documentation.css
+│   │   │   └── material-dashboard.css
 │   │   ├── img
 │   │   │   └── faces
 │   │   └── js
+│   │       ├── bootstrap.min.js
+│   │       └── jquery-3.2.1.min.js
 │   └── tutorial-components.html
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── logo.svg
-    ├── routes.js
-    ├── assets
-    │   ├── css
-    │   │   └── material-dashboard-react.css
-    │   ├── github
-    │   │   ├── md-react.gif
-    │   │   └── react.svg
-    │   ├── img
-    │   │   └── faces
-    │   └── jss
-    │       ├── material-dashboard-react
-    │       │   ├── components
-    │       │   ├── layouts
-    │       │   └── views
-    │       └── material-dashboard-react.js
-    ├── components
-    │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardAvatar.js
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   ├── CardHeader.js
-    │   │   └── CardIcon.js
-    │   ├── CustomButtons
-    │   │   └── Button.js
-    │   ├── CustomInput
-    │   │   └── CustomInput.js
-    │   ├── CustomTabs
-    │   │   └── CustomTabs.js
-    │   ├── FixedPlugin
-    │   │   └── FixedPlugin.js
-    │   ├── Footer
-    │   │   └── Footer.js
-    │   ├── Grid
-    │   │   ├── GridContainer.js
-    │   │   └── GridItem.js
-    │   ├── Navbars
-    │   │   ├── AdminNavbarLinks.js
-    │   │   ├── Navbar.js
-    │   │   └── RTLNavbarLinks.js
-    │   ├── Sidebar
-    │   │   └── Sidebar.js
-    │   ├── Snackbar
-    │   │   ├── Snackbar.js
-    │   │   └── SnackbarContent.js
-    │   ├── Table
-    │   │   └── Table.js
-    │   ├── Tasks
-    │   │   └── Tasks.js
-    │   └── Typography
-    │       ├── Danger.js
-    │       ├── Info.js
-    │       ├── Muted.js
-    │       ├── Primary.js
-    │       ├── Quote.js
-    │       ├── Success.js
-    │       └── Warning.js
-    ├── layouts
-    │   ├── Admin.js
-    │   └── RTL.js
-    ├── variables
-    │   ├── charts.js
-    │   └── general.js
-    └── views
-        ├── Dashboard
-        │   └── Dashboard.js
-        ├── Icons
-        │   └── Icons.js
-        ├── Maps
-        │   └── Maps.js
-        ├── Notifications
-        │   └── Notifications.js
-        ├── RTLPage
-        │   └── RTLPage.js
-        ├── TableList
-        │   └── TableList.js
-        ├── Typography
-        │   └── Typography.js
-        ├── UpgradeToPro
-        │   └── UpgradeToPro.js
-        └── UserProfile
-            └── UserProfile.js
+├── layouts
+│   ├── Admin.js
+│   └── RTL.js
+├── next.config.js
+├── package.json
+├── pages
+│   ├── _app.js
+│   ├── _document.js
+│   ├── _error.js
+│   ├── admin
+│   │   ├── dashboard.js
+│   │   ├── icons.js
+│   │   ├── maps.js
+│   │   ├── notifications.js
+│   │   ├── table-list.js
+│   │   ├── typography.js
+│   │   ├── upgrade-to-pro.js
+│   │   └── user-profile.js
+│   ├── index.js
+│   └── rtl
+│       └── rtl-page.js
+├── routes.js
+└── variables
+    ├── charts.js
+    └── general.js
 ```
 
 ## Browser Support
@@ -197,13 +219,14 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: https://demos.creative-tim.com/material-dashboard-react
-- Download Page: https://www.creative-tim.com/product/material-dashboard-react
-- Documentation: https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial
+- Demo: https://demos.creative-tim.com/nextjs-material-dashboard
+- Download Page: https://www.creative-tim.com/product/nextjs-material-dashboard
+- Documentation: https://demos.creative-tim.com/nextjs-material-dashboard/#/documentation/tutorial
 - License Agreement: https://www.creative-tim.com/license
 - Support: https://www.creative-tim.com/contact-us
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react/issues)
-- [Material Kit React - For Front End Development](https://www.creative-tim.com/product/material-kit-react?ref=github-mdr-free)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-material-dashboard/issues)
+- [NextJS Material Kit - For Front End Development](https://www.creative-tim.com/product/nextjs-material-kit?ref=github-mdr-free)
+
 
 ## Reporting Issues
 We use GitHub Issues as the official bug tracker for the Material Dashboard React. Here are some advices for our users that want to report an issue:
@@ -219,7 +242,7 @@ If you have questions or need help integrating the product please [contact us](h
 ## Licensing
 
 - Copyright 2020 Creative Tim (https://www.creative-tim.com)
-- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-dashboard/blob/master/LICENSE.md)
 
 ## Useful Links
 
