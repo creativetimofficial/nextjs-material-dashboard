@@ -41,7 +41,7 @@ export default function RegularButton(props) {
     [className]: className,
   });
   return (
-    <Button {...rest} classes={muiClasses} className={btnClasses}>
+    <Button {...rest} classes={{ ...muiClasses, root: btnClasses }}>
       {children}
     </Button>
   );
