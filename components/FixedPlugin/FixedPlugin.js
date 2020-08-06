@@ -142,7 +142,7 @@ export default function FixedPlugin(props) {
             <div className="button-container">
               <Button
                 color="success"
-                href="https://www.creative-tim.com/product/material-dashboard-react?ref=njsmd-fixed-plugin"
+                href="https://www.creative-tim.com/product/nextjs-material-dashboard?ref=njsmd-fixed-plugin"
                 target="_blank"
                 fullWidth
               >
@@ -166,7 +166,7 @@ export default function FixedPlugin(props) {
             <Button
               color="info"
               fullWidth
-              href="https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial?ref=njsmd-fixed-plugin"
+              href="https://demos.creative-tim.com/nextjs-material-dashboard/#/documentation/tutorial?ref=njsmd-fixed-plugin"
               target="_blank"
             >
               Documentation
