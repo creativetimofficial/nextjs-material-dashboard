@@ -1,8 +1,8 @@
-/*eslint-disable*/
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import { useRouter } from "next/router";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -20,11 +20,13 @@ import styles from "assets/jss/nextjs-material-dashboard/components/sidebarStyle
 const useStyles = makeStyles(styles);
 
 export default function Sidebar(props) {
+  // used for checking current route
+  const router = useRouter();
+  // creates styles for this component
   const classes = useStyles();
   // verifies if routeName is the one active (in browser input)
   function activeRoute(routeName) {
-    return true;
-    // return window.location.href.indexOf(routeName) > -1 ? true : false;
+    return router.route.indexOf(routeName) > -1 ? true : false;
   }
   const { color, logo, image, logoText, routes } = props;
   var links = (
