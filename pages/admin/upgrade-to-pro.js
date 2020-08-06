@@ -184,7 +184,7 @@ function UpgradeToPro() {
                   <tr>
                     <td />
                     <td className={classes.center}>Free</td>
-                    <td className={classes.center}>From $89</td>
+                    <td className={classes.center}>From $99</td>
                   </tr>
                   <tr>
                     <td />
