@@ -47,7 +47,7 @@ export default function Sidebar(props) {
         });
         return (
           <Link href={prop.layout + prop.path} key={key}>
-            <a className={activePro + classes.item} activeClassName="active">
+            <a className={activePro + classes.item}>
               <ListItem button className={classes.itemLink + listItemClasses}>
                 {typeof prop.icon === "string" ? (
                   <Icon
