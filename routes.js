@@ -43,7 +43,7 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/table",
+    path: "/table-list",
     name: "Table List",
     rtlName: "قائمة الجدول",
     icon: "content_paste",
