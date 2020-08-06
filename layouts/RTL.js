@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from 'next/router'
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
@@ -22,6 +23,8 @@ let ps;
 const useStyles = makeStyles(styles);
 
 export default function RTL({ children, ...rest }) {
+  // used for checking current route
+  const router = useRouter();
   // styles
   const classes = useStyles();
   // ref to help us initialize PerfectScrollbar on windows devices
@@ -48,14 +51,13 @@ export default function RTL({ children, ...rest }) {
     setMobileOpen(!mobileOpen);
   };
   const getRoute = () => {
-    return true;
-    // return window.location.pathname !== "/admin/maps";
+    return router.pathname !== "/admin/maps";
   };
-  // const resizeFunction = () => {
-  //   if (window.innerWidth >= 960) {
-  //     setMobileOpen(false);
-  //   }
-  // };
+  const resizeFunction = () => {
+    if (window.innerWidth >= 960) {
+      setMobileOpen(false);
+    }
+  };
   // initialize and destroy the PerfectScrollbar plugin
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
@@ -65,13 +67,13 @@ export default function RTL({ children, ...rest }) {
       });
       document.body.style.overflow = "hidden";
     }
-    // window.addEventListener("resize", resizeFunction);
+    window.addEventListener("resize", resizeFunction);
     // Specify how to clean up after this effect:
     return function cleanup() {
       if (navigator.platform.indexOf("Win") > -1) {
         ps.destroy();
       }
-      // window.removeEventListener("resize", resizeFunction);
+      window.removeEventListener("resize", resizeFunction);
     };
   }, [mainPanel]);
   return (
