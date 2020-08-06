@@ -237,7 +237,7 @@ function Notifications() {
                   place="tl"
                   color="info"
                   icon={AddAlert}
-                  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
+                  message="Welcome to NextJS MATERIAL DASHBOARD - a beautiful freebie for every web developer."
                   open={tl}
                   closeNotification={() => setTL(false)}
                   close
@@ -255,7 +255,7 @@ function Notifications() {
                   place="tc"
                   color="info"
                   icon={AddAlert}
-                  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
+                  message="Welcome to NextJS MATERIAL DASHBOARD - a beautiful freebie for every web developer."
                   open={tc}
                   closeNotification={() => setTC(false)}
                   close
@@ -273,7 +273,7 @@ function Notifications() {
                   place="tr"
                   color="info"
                   icon={AddAlert}
-                  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
+                  message="Welcome to NextJS MATERIAL DASHBOARD - a beautiful freebie for every web developer."
                   open={tr}
                   closeNotification={() => setTR(false)}
                   close
@@ -297,7 +297,7 @@ function Notifications() {
                   place="bl"
                   color="info"
                   icon={AddAlert}
-                  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
+                  message="Welcome to NextJS MATERIAL DASHBOARD - a beautiful freebie for every web developer."
                   open={bl}
                   closeNotification={() => setBL(false)}
                   close
@@ -315,7 +315,7 @@ function Notifications() {
                   place="bc"
                   color="info"
                   icon={AddAlert}
-                  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
+                  message="Welcome to NextJS MATERIAL DASHBOARD - a beautiful freebie for every web developer."
                   open={bc}
                   closeNotification={() => setBC(false)}
                   close
@@ -333,7 +333,7 @@ function Notifications() {
                   place="br"
                   color="info"
                   icon={AddAlert}
-                  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
+                  message="Welcome to NextJS MATERIAL DASHBOARD - a beautiful freebie for every web developer."
                   open={br}
                   closeNotification={() => setBR(false)}
                   close
