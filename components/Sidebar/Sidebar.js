@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
@@ -45,7 +46,9 @@ export default function Sidebar(props) {
           });
         }
         const whiteFontClasses = classNames({
-          [" " + classes.whiteFont]: activeRoute(prop.layout + prop.path),
+          [" " + classes.whiteFont]:
+            activeRoute(prop.layout + prop.path) ||
+            prop.path === "/upgrade-to-pro",
         });
         return (
           <Link href={prop.layout + prop.path} key={key}>
@@ -154,7 +157,14 @@ export default function Sidebar(props) {
 Sidebar.propTypes = {
   rtlActive: PropTypes.bool,
   handleDrawerToggle: PropTypes.func,
-  bgColor: PropTypes.oneOf(["purple", "blue", "green", "orange", "red"]),
+  bgColor: PropTypes.oneOf([
+    "dark",
+    "purple",
+    "blue",
+    "green",
+    "orange",
+    "red",
+  ]),
   logo: PropTypes.string,
   image: PropTypes.string,
   logoText: PropTypes.string,

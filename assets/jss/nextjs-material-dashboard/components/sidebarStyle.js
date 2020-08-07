@@ -87,7 +87,7 @@ const sidebarStyle = (theme) => ({
     textDecoration: "none",
     backgroundColor: "transparent",
     "&,&:hover": {
-      color: whiteColor,
+      color: grayColor[2],
     },
   },
   logoLinkRTL: {
@@ -124,7 +124,7 @@ const sidebarStyle = (theme) => ({
       height: "100%",
       content: '""',
       display: "block",
-      background: blackColor,
+      background: whiteColor,
       opacity: ".8",
     },
   },
@@ -165,7 +165,7 @@ const sidebarStyle = (theme) => ({
     marginRight: "15px",
     textAlign: "center",
     verticalAlign: "middle",
-    color: "rgba(" + hexToRgb(whiteColor) + ", 0.8)",
+    color: "rgba(" + hexToRgb(grayColor[2]) + ", 0.8)",
   },
   itemIconRTL: {
     marginRight: "3px",
@@ -177,7 +177,7 @@ const sidebarStyle = (theme) => ({
     margin: "0",
     lineHeight: "30px",
     fontSize: "14px",
-    color: whiteColor,
+    color: grayColor[2],
   },
   itemTextRTL: {
     textAlign: "right",
@@ -278,6 +278,28 @@ const sidebarStyle = (theme) => ({
         hexToRgb(blackColor) +
         ",.12), 0 7px 8px -5px rgba(" +
         hexToRgb(dangerColor[0]) +
+        ",.2)",
+    },
+  },
+  dark: {
+    backgroundColor: grayColor[12],
+    boxShadow:
+      "0 12px 20px -10px rgba(" +
+      hexToRgb(grayColor[12]) +
+      ",.28), 0 4px 20px 0 rgba(" +
+      hexToRgb(blackColor) +
+      ",.12), 0 7px 8px -5px rgba(" +
+      hexToRgb(grayColor[12]) +
+      ",.2)",
+    "&:hover,&:focus": {
+      backgroundColor: grayColor[12],
+      boxShadow:
+        "0 12px 20px -10px rgba(" +
+        hexToRgb(grayColor[12]) +
+        ",.28), 0 4px 20px 0 rgba(" +
+        hexToRgb(blackColor) +
+        ",.12), 0 7px 8px -5px rgba(" +
+        hexToRgb(grayColor[12]) +
         ",.2)",
     },
   },
