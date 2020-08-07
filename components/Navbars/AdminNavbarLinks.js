@@ -18,12 +18,14 @@ import Search from "@material-ui/icons/Search";
 // core components
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
+import useWindowSize from "components/Hooks/useWindowSize.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
 
 export default function AdminNavbarLinks() {
+  const size = useWindowSize();
   const classes = useStyles();
   const [openNotification, setOpenNotification] = React.useState(null);
   const [openProfile, setOpenProfile] = React.useState(null);
@@ -66,9 +68,9 @@ export default function AdminNavbarLinks() {
         </Button>
       </div>
       <Button
-        color={window.innerWidth > 959 ? "transparent" : "white"}
-        justIcon={window.innerWidth > 959}
-        simple={!(window.innerWidth > 959)}
+        color={size.width > 959 ? "transparent" : "white"}
+        justIcon={size.width > 959}
+        simple={!(size.width > 959)}
         aria-label="Dashboard"
         className={classes.buttonLink}
       >
@@ -79,9 +81,9 @@ export default function AdminNavbarLinks() {
       </Button>
       <div className={classes.manager}>
         <Button
-          color={window.innerWidth > 959 ? "transparent" : "white"}
-          justIcon={window.innerWidth > 959}
-          simple={!(window.innerWidth > 959)}
+          color={size.width > 959 ? "transparent" : "white"}
+          justIcon={size.width > 959}
+          simple={!(size.width > 959)}
           aria-owns={openNotification ? "notification-menu-list-grow" : null}
           aria-haspopup="true"
           onClick={handleClickNotification}
@@ -157,9 +159,9 @@ export default function AdminNavbarLinks() {
       </div>
       <div className={classes.manager}>
         <Button
-          color={window.innerWidth > 959 ? "transparent" : "white"}
-          justIcon={window.innerWidth > 959}
-          simple={!(window.innerWidth > 959)}
+          color={size.width > 959 ? "transparent" : "white"}
+          justIcon={size.width > 959}
+          simple={!(size.width > 959)}
           aria-owns={openProfile ? "profile-menu-list-grow" : null}
           aria-haspopup="true"
           onClick={handleClickProfile}
