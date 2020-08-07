@@ -302,7 +302,7 @@ function RTLPage() {
                 ونصب من قبل{" "}
                 <a
                   target="_blank"
-                  href="https://www.creative-tim.com/?ref=mdr-rtl-page"
+                  href="https://www.creative-tim.com/?ref=njsmd-rtl-page"
                 >
                   الإبداعية تيم
                 </a>
