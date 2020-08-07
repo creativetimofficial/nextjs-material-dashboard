@@ -5,12 +5,13 @@ import {
   infoCardHeader,
   primaryCardHeader,
   roseCardHeader,
+  darkCardHeader,
   grayColor,
 } from "assets/jss/nextjs-material-dashboard.js";
 
 const cardIconStyle = {
   cardIcon: {
-    "&$warningCardHeader,&$successCardHeader,&$dangerCardHeader,&$infoCardHeader,&$primaryCardHeader,&$roseCardHeader": {
+    "&$warningCardHeader,&$successCardHeader,&$dangerCardHeader,&$infoCardHeader,&$primaryCardHeader,&$roseCardHeader,&$darkCardHeader": {
       borderRadius: "3px",
       backgroundColor: grayColor[0],
       padding: "15px",
@@ -25,6 +26,7 @@ const cardIconStyle = {
   infoCardHeader,
   primaryCardHeader,
   roseCardHeader,
+  darkCardHeader,
 };
 
 export default cardIconStyle;

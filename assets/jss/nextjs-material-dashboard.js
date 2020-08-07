@@ -90,6 +90,7 @@ const grayColor = [
   "#eee",
   "#e7e7e7",
   "#212121",
+  "#263238"
 ];
 const blackColor = "#000";
 const whiteColor = "#FFF";
@@ -154,6 +155,15 @@ const roseBoxShadow = {
     ",.4)",
 };
 
+const darkBoxShadow = {
+  boxShadow:
+    "0 4px 20px 0 rgba(" +
+    hexToRgb(blackColor) +
+    ",.14), 0 7px 10px -5px rgba(" +
+    hexToRgb(grayColor[12]) +
+    ",.4)",
+};
+
 const warningCardHeader = {
   background:
     "linear-gradient(60deg, " + warningColor[1] + ", " + warningColor[2] + ")",
@@ -183,6 +193,11 @@ const roseCardHeader = {
   background:
     "linear-gradient(60deg, " + roseColor[1] + ", " + roseColor[2] + ")",
   ...roseBoxShadow,
+};
+const darkCardHeader = {
+  background:
+    "linear-gradient(60deg, " + grayColor[13] + ", " + grayColor[12] + ")",
+  ...darkBoxShadow,
 };
 
 const cardActions = {
@@ -287,12 +302,14 @@ export {
   warningBoxShadow,
   dangerBoxShadow,
   roseBoxShadow,
+  darkBoxShadow,
   warningCardHeader,
   successCardHeader,
   dangerCardHeader,
   infoCardHeader,
   primaryCardHeader,
   roseCardHeader,
+  darkCardHeader,
   cardActions,
   cardHeader,
   defaultBoxShadow,

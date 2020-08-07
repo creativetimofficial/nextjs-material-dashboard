@@ -73,8 +73,8 @@ function Dashboard() {
         </GridItem>
         <GridItem xs={12} sm={6} md={3}>
           <Card>
-            <CardHeader color="success" stats icon>
-              <CardIcon color="success">
+            <CardHeader color="dark" stats icon>
+              <CardIcon color="dark">
                 <Store />
               </CardIcon>
               <p className={classes.cardCategory}>Revenue</p>
@@ -176,7 +176,7 @@ function Dashboard() {
         </GridItem>
         <GridItem xs={12} sm={12} md={4}>
           <Card chart>
-            <CardHeader color="danger">
+            <CardHeader color="dark">
               <ChartistGraph
                 className="ct-chart"
                 data={completedTasksChart.data}
@@ -201,7 +201,7 @@ function Dashboard() {
         <GridItem xs={12} sm={12} md={6}>
           <CustomTabs
             title="Tasks:"
-            headerColor="primary"
+            headerColor="dark"
             tabs={[
               {
                 tabName: "Bugs",
