@@ -43,6 +43,17 @@ export default function FixedPlugin(props) {
               <div>
                 <span
                   className={
+                    props.bgColor === "dark"
+                      ? "badge filter badge-dark active"
+                      : "badge filter badge-dark"
+                  }
+                  data-color="dark"
+                  onClick={() => {
+                    props.handleColorClick("dark");
+                  }}
+                />
+                <span
+                  className={
                     props.bgColor === "purple"
                       ? "badge filter badge-purple active"
                       : "badge filter badge-purple"
@@ -215,7 +226,14 @@ FixedPlugin.propTypes = {
   handleFixedClick: PropTypes.func,
   rtlActive: PropTypes.bool,
   fixedClasses: PropTypes.string,
-  bgColor: PropTypes.oneOf(["purple", "blue", "green", "orange", "red"]),
+  bgColor: PropTypes.oneOf([
+    "dark",
+    "purple",
+    "blue",
+    "green",
+    "orange",
+    "red",
+  ]),
   handleColorClick: PropTypes.func,
   handleImageClick: PropTypes.func,
 };
