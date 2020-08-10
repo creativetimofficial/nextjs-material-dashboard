@@ -351,6 +351,10 @@ footer ul li a:hover {
   background-color: #f44336;
 }
 
+.fixed-plugin .badge-white {
+  background-color: #f1f1f1;
+}
+
 .fixed-plugin h5 {
   font-size: 14px;
   margin: 10px;
