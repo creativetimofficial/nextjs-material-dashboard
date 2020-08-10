@@ -168,7 +168,7 @@ Sidebar.propTypes = {
   rtlActive: PropTypes.bool,
   handleDrawerToggle: PropTypes.func,
   bgColor: PropTypes.oneOf([
-    "dark",
+    "white",
     "purple",
     "blue",
     "green",
