@@ -4,7 +4,7 @@
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-material-dashboard.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-material-dashboard.svg?maxAge=2592000)]() [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/material-dashboard?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-![Product Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/opt_md_nextjs_thumbnail.jpeg)
+![Product Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/opt_md_nextjs_thumbnail.jpg)
 
 NextJS Material Dashboard is a free Material-UI, NextJS and React Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. NextJS Material Dashboard was built over the popular Material-UI, NextJS and React frameworks.
 
@@ -27,6 +27,9 @@ It is open source, and it's Github Repo can be found [here](https://github.com/c
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
 * [Resources](#resources)
+* [Kit Versions](#kit-versions)
+* [Pro Versions](#pro-versions)
+* [Pro Kit Versions](#pro-kit-versions)
 * [Reporting Issues](#reporting-issues)
 * [Technical Support or Questions](#technical-support-or-questions)
 * [Licensing](#licensing)
@@ -46,7 +49,7 @@ It is open source, and it's Github Repo can be found [here](https://github.com/c
 
 | NextJS | NodeJS | Laravel | Vue & Laravel | Vuetify |
 | --- | --- | --- | --- | --- |
-| [![ NextJS Material Dashboard ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/opt_md_nextjs_thumbnail.jpeg)](https://www.creative-tim.com/product/nextjs-material-dashboard) | [![Material Dashboard React NodeJS ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-react-nodejs/opt_md_react_node_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-nodejs) | [![Material Dashboard Laravel ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-laravel/material-dashboard-laravel.jpg)](https://www.creative-tim.com/product/material-dashboard-laravel) | [![Vue Material Dashboard Laravel ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-material-dashboard-laravel/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel) | [![Vuetify Material Dashboard ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg)](https://www.creative-tim.com/product/vuetify-material-dashboard)
+| [![ NextJS Material Dashboard ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/opt_md_nextjs_thumbnail.jpg)](https://www.creative-tim.com/product/nextjs-material-dashboard) | [![Material Dashboard React NodeJS ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-react-nodejs/opt_md_react_node_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-nodejs) | [![Material Dashboard Laravel ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-laravel/material-dashboard-laravel.jpg)](https://www.creative-tim.com/product/material-dashboard-laravel) | [![Vue Material Dashboard Laravel ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-material-dashboard-laravel/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel) | [![Vuetify Material Dashboard ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg)](https://www.creative-tim.com/product/vuetify-material-dashboard)
 
 
 | HTML Dark | HTML | React | Vue | Angular |
@@ -55,11 +58,13 @@ It is open source, and it's Github Repo can be found [here](https://github.com/c
 
 ## Demo
 
-| Dashboard | User Profile | Tables | Maps | Notification |
-| --- | --- | --- | --- | --- |
-| [![Start page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/dashboard.png)](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard) | [![User profile page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/user_profile.png)](https://demos.creative-tim.com/nextjs-material-dashboard/user-profile) | [![Tables page ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/tables.png)](https://demos.creative-tim.com/nextjs-material-dashboard/table-list) | [![Maps Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/maps.png)](https://demos.creative-tim.com/nextjs-material-dashboard/maps) | [![Notification page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard/notification.png)](https://demos.creative-tim.com/nextjs-material-dashboard/notifications)
+- [Start page](https://demos.creative-tim.com/nextjs-material-dashboard/admin/dashboard)
+- [User profile page](https://demos.creative-tim.com/nextjs-material-dashboard/admin/user-profile)
+- [Tables page ](https://demos.creative-tim.com/nextjs-material-dashboard-pro/admin/table-list)
+- [Maps Page](https://demos.creative-tim.com/nextjs-material-dashboard-pro/admin/maps)
+- [Notifications page](https://demos.creative-tim.com/nextjs-material-dashboard-pro/admin/notifications)
 
-[View More](https://demos.creative-tim.com/nextjs-material-dashboard/dashboard).
+[View More](https://demos.creative-tim.com/nextjs-material-dashboard-pro/admin/dashboard).
 
 
 ## Quick start
@@ -215,7 +220,7 @@ nextjs-material-dashboard
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="src/assets/github/chrome.png" width="64" height="64"> <img src="src/assets/github/firefox.png" width="64" height="64"> <img src="src/assets/github/edge.png" width="64" height="64"> <img src="src/assets/github/safari.png" width="64" height="64"> <img src="src/assets/github/opera.png" width="64" height="64">
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 
 ## Resources
@@ -225,7 +230,62 @@ At present, we officially aim to support the last two versions of the following 
 - License Agreement: https://www.creative-tim.com/license
 - Support: https://www.creative-tim.com/contact-us
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-material-dashboard/issues)
-- [NextJS Material Kit - For Front End Development](https://www.creative-tim.com/product/nextjs-material-kit?ref=github-mdr-free)
+
+### Kit Versions
+
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg" width="60" height="60" />](https://www.creative-tim.com/product/nextjs-material-kit)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-native-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react-native)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/icon-ghost.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-ghots)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit)
+
+| NextJS | React Native | Vue | Ghost |
+| --- | --- | --- | --- |
+| [![ NextJS Material Kit ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/nextjs-material-kit.jpg)](https://www.creative-tim.com/product/nextjs-material-kit) | [![Material Kit React Native ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-react-native/opt_mkrn_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit-react-native) | [![Vue Material Kit](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-material-kit/vue-material-kit.jpg)](https://www.creative-tim.com/product/vue-material-kit) | [![Material Kit Ghots](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-ghost/opt_mk_ghost_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react) |
+
+
+| HTML | React |
+| --- | --- |
+| [![Material Kit HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit/material-kit.jpeg)](https://www.creative-tim.com/product/material-kit) | [![Material Kit React ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-react/material-kit-react.jpeg)](https://www.creative-tim.com/product/material-kit-react) |
+
+### Pro Versions
+
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg" width="60" height="60" />](https://www.creative-tim.com/product/nextjs-material-dashboard-pro)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-laravel)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-react)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard-pro)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-pro-angular2)
+
+
+| NextJS | Laravel | Vue & Laravel | Vuetify |
+| --- | --- | --- | --- |
+| [![ NextJS Material Dashboard PRO ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-dashboard-pro/nextjs-material-dashboard-pro.jpg)](https://www.creative-tim.com/product/nextjs-material-dashboard-pro) | [![Material Dashboard PRO Laravel ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-pro-laravel/material-dashboard-pro-laravel.jpg)](https://www.creative-tim.com/product/material-dashboard-pro-laravel) | [![Vue Material Dashboard PRO Laravel ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-material-dashboard-pro-laravel/vue-material-dashboard-pro-laravel.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro) | [![Vuetify Material Dashboard PRO ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vuetify-material-dashboard-pro/vuetify-material-dashboard-pro.jpg)](https://www.creative-tim.com/product/vuetify-material-dashboard-pro)
+
+
+| HTML | React | Vue | Angular |
+| --- | --- | --- | --- |
+| [![Material Dashboard PRO HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-pro-html/opt_mdp_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-pro) | [![Material Dashboard PRO React](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-pro-react/material-dashboard-pro-react.jpg)](https://www.creative-tim.com/product/material-dashboard-pro-react) | [![Vue Material Dashboard PRO ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-material-dashboard-pro/vue-material-dashboard-pro.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-pro) | [![Material Dashboard PRO Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-dashboard-pro-angular/material-dashboard-pro-angular.jpg)](https://www.creative-tim.com/product/material-dashboard-pro-angular2)
+
+### Pro Kit Versions
+
+
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg" width="60" height="60" />](https://www.creative-tim.com/product/nextjs-material-kit-pro)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-native-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-pro-react-native)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-blog-pro-laravel)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-pro)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-pro-react)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit-pro)
+
+| NextJS | React Native | Vue | Laravel |
+| --- | --- | --- | --- |
+| [![ NextJS Material Kit PRO ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit-pro/nextjs-material-kit-pro.jpg)](https://www.creative-tim.com/product/nextjs-material-kit-pro) | [![Material Kit PRO React Native ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-pro-react-native/material-kit-pro-react-native.jpg)](https://www.creative-tim.com/product/material-kit-pro-react-native) | [![Vue Material Kit PRO](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-material-kit-pro/vue-material-kit-pro.jpg)](https://www.creative-tim.com/product/vue-material-kit-pro) | [![Material Blog PRO Laravel](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-blog-pro-laravel/material-blog-pro-laravel.jpg)](https://www.creative-tim.com/product/material-blog-pro-laravel) |
+
+
+| HTML | React |
+| --- | --- |
+| [![Material Kit PRO HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-pro-html/opt_mkp_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit-pro) | [![Material Kit PRO React ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-pro-react/material-kit-pro-react.jpg)](https://www.creative-tim.com/product/material-kit-pro-react) |
 
 
 ## Reporting Issues
