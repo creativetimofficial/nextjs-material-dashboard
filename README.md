@@ -78,7 +78,7 @@ Quick start options:
 
 
 ## Documentation
-The documentation for the Material Dashboard React is hosted at our [website](https://demos.creative-tim.com/nextjs-material-dashboard/#/documentation/tutorial).
+The documentation for the Material Dashboard React is hosted at our [website](https://www.creative-tim.com/learning-lab/nextjs/overview/material-dashboard).
 
 
 ## File Structure
@@ -226,7 +226,7 @@ At present, we officially aim to support the last two versions of the following 
 ## Resources
 - Demo: https://demos.creative-tim.com/nextjs-material-dashboard
 - Download Page: https://www.creative-tim.com/product/nextjs-material-dashboard
-- Documentation: https://demos.creative-tim.com/nextjs-material-dashboard/#/documentation/tutorial
+- Documentation: https://www.creative-tim.com/learning-lab/nextjs/overview/material-dashboard
 - License Agreement: https://www.creative-tim.com/license
 - Support: https://www.creative-tim.com/contact-us
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-material-dashboard/issues)
