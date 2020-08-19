@@ -90,7 +90,7 @@ const grayColor = [
   "#eee",
   "#e7e7e7",
   "#212121",
-  "#263238"
+  "#263238",
 ];
 const blackColor = "#000";
 const whiteColor = "#FFF";
