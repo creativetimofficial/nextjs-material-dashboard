@@ -55,7 +55,7 @@ export default function Sidebar(props) {
             href={prop.layout + prop.path}
             as={
               (process.env.NODE_ENV === "production"
-                ? "/nextjs-material-kit"
+                ? "/nextjs-material-dashboard"
                 : "") +
               prop.layout +
               prop.path
