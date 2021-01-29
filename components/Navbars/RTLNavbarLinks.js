@@ -21,10 +21,9 @@ import useWindowSize from "components/Hooks/useWindowSize.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/components/rtlHeaderLinksStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function RTLNavbarLinks() {
   const size = useWindowSize();
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const [open, setOpen] = React.useState(null);
   const handleToggle = (event) => {
