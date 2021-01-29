@@ -41,9 +41,8 @@ const styles = {
   },
 };
 
-const useStyles = makeStyles(styles);
-
 function TableList() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <GridContainer>
