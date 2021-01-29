@@ -5,9 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import styles from "assets/jss/nextjs-material-dashboard/components/typographyStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function Info(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const { children } = props;
   return (
