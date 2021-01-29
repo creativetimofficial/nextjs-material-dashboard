@@ -10,9 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import styles from "assets/jss/nextjs-material-dashboard/components/cardHeaderStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function CardHeader(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const { className, children, color, plain, stats, icon, ...rest } = props;
   const cardHeaderClasses = classNames({
