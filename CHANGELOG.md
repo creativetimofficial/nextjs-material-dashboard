@@ -1,12 +1,9 @@
 ## [1.1.0] 2021-02-
 ### Bug fixing
-
+- https://github.com/creativetimofficial/ct-nextjs-material-dashboard-pro/issues/2
 ### Major style changes
-
 ### Deleted components
-
 ### Added components
-
 ### Deleted dependencies
 - @types/googlemaps
 - @types/markerclustererplus
@@ -32,9 +29,6 @@ _The following warnings will appear when running the installation command, but t
 ```
 npm WARN react-chartist@0.14.3 requires a peer of react@^0.14.9 || ^15.0.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
 npm WARN react-swipeable-views@0.13.9 requires a peer of react@^15.3.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
-npm WARN css-loader@1.0.0 requires a peer of webpack@^4.0.0 but none is installed. You must install peer dependencies yourself.
-npm WARN mini-css-extract-plugin@0.4.3 requires a peer of webpack@^4.4.0 but none is installed. You must install peer dependencies yourself.
-npm WARN terser-webpack-plugin@1.4.5 requires a peer of webpack@^4.0.0 but none is installed. You must install peer dependencies yourself.
 npm WARN react-event-listener@0.6.6 requires a peer of react@^16.3.0 but none is installed. You must install peer dependencies yourself.
 ```
 _If they will persist in our 2.*.* version, we will drop their usages and replace them with other plugins._
