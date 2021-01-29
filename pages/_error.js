@@ -1,12 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Router from "next/router";
 
-export default class _error extends Component {
-  componentDidMount = () => {
+export default function _error(){
+  React.useEffect(() => {
     Router.push("/admin/dashboard");
-  };
+  });
 
-  render() {
-    return <div />;
-  }
+  return <div />;
 }
