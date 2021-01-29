@@ -8,9 +8,8 @@ import List from "@material-ui/core/List";
 // core components
 import styles from "assets/jss/nextjs-material-dashboard/components/footerStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function Footer(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <footer className={classes.footer}>
