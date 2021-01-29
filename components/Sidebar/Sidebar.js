@@ -18,12 +18,11 @@ import RTLNavbarLinks from "components/Navbars/RTLNavbarLinks.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/components/sidebarStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function Sidebar(props) {
   // used for checking current route
   const router = useRouter();
   // creates styles for this component
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   // verifies if routeName is the one active (in browser input)
   function activeRoute(routeName) {
