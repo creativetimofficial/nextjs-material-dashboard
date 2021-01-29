@@ -12,9 +12,8 @@ import Check from "@material-ui/icons/Check";
 // core components
 import styles from "assets/jss/nextjs-material-dashboard/components/customInputStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function CustomInput(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const {
     formControlProps,

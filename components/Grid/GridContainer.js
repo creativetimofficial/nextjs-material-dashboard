@@ -12,9 +12,8 @@ const styles = {
   },
 };
 
-const useStyles = makeStyles(styles);
-
 export default function GridContainer(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const { children, ...rest } = props;
   return (

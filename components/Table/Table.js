@@ -10,9 +10,8 @@ import TableCell from "@material-ui/core/TableCell";
 // core components
 import styles from "assets/jss/nextjs-material-dashboard/components/tableStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function CustomTable(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const { tableHead, tableData, tableHeaderColor } = props;
   return (

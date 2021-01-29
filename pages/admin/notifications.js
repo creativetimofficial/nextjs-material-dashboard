@@ -48,9 +48,8 @@ const styles = {
   },
 };
 
-const useStyles = makeStyles(styles);
-
 function Notifications() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const [tl, setTL] = React.useState(false);
   const [tc, setTC] = React.useState(false);

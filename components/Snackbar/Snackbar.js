@@ -10,9 +10,8 @@ import Close from "@material-ui/icons/Close";
 // core components
 import styles from "assets/jss/nextjs-material-dashboard/components/snackbarContentStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function Snackbar(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const { message, color, close, icon, place, open, rtlActive } = props;
   var action = [];

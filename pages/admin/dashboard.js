@@ -41,9 +41,8 @@ import {
 
 import styles from "assets/jss/nextjs-material-dashboard/views/dashboardStyle.js";
 
-const useStyles = makeStyles(styles);
-
 function Dashboard() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <div>

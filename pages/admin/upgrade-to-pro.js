@@ -83,9 +83,8 @@ const styles = {
   },
 };
 
-const useStyles = makeStyles(styles);
-
 function UpgradeToPro() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <GridContainer justify="center">

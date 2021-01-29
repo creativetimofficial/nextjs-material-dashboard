@@ -17,9 +17,8 @@ import Check from "@material-ui/icons/Check";
 // core components
 import styles from "assets/jss/nextjs-material-dashboard/components/tasksStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function Tasks(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const [checked, setChecked] = React.useState([...props.checkedIndexes]);
   const handleToggle = (value) => {

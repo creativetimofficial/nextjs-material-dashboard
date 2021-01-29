@@ -1,14 +1,3 @@
-if (typeof window === "undefined") {
-  global.window = {};
-}
-if (typeof document === "undefined") {
-  global.document = {};
-}
-// ##############################
-// // // javascript library for creating charts
-// #############################
-var Chartist = require("chartist");
-
 // ##############################
 // // // variables used to create animation on charts
 // #############################
@@ -27,9 +16,6 @@ const dailySalesChart = {
     series: [[12, 17, 7, 17, 23, 18, 38]],
   },
   options: {
-    lineSmooth: Chartist.Interpolation.cardinal({
-      tension: 0,
-    }),
     low: 0,
     high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
     chartPadding: {
@@ -53,7 +39,6 @@ const dailySalesChart = {
               .translate(0, data.chartRect.height())
               .stringify(),
             to: data.path.clone().stringify(),
-            easing: Chartist.Svg.Easing.easeOutQuint,
           },
         });
       } else if (data.type === "point") {
@@ -146,9 +131,6 @@ const completedTasksChart = {
     series: [[230, 750, 450, 300, 280, 240, 200, 190]],
   },
   options: {
-    lineSmooth: Chartist.Interpolation.cardinal({
-      tension: 0,
-    }),
     low: 0,
     high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
     chartPadding: {
@@ -171,7 +153,6 @@ const completedTasksChart = {
               .translate(0, data.chartRect.height())
               .stringify(),
             to: data.path.clone().stringify(),
-            easing: Chartist.Svg.Easing.easeOutQuint,
           },
         });
       } else if (data.type === "point") {

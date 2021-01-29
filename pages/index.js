@@ -1,12 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Router from "next/router";
 
-export default class Index extends Component {
-  componentDidMount = () => {
+export default function Index() {
+  React.useEffect(() => {
     Router.push("/nextjs-material-dashboard/admin/dashboard");
-  };
+  });
 
-  render() {
-    return <div />;
-  }
+  return <div />;
 }

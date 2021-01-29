@@ -17,12 +17,11 @@ import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/components/headerStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function Header(props) {
   // used for checking current route
   const router = useRouter();
   // create styles for this component
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   function makeBrand() {
     var name = "NextJS Material Dashboard";
