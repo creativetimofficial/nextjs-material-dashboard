@@ -36,9 +36,8 @@ const styles = {
   },
 };
 
-const useStyles = makeStyles(styles);
-
 function UserProfile() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <div>
