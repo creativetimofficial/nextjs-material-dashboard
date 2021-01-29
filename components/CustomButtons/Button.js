@@ -10,9 +10,8 @@ import Button from "@material-ui/core/Button";
 
 import styles from "assets/jss/nextjs-material-dashboard/components/buttonStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function RegularButton(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const {
     color,
