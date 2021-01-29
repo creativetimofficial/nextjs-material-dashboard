@@ -20,12 +20,11 @@ import logo from "assets/img/reactlogo.png";
 
 let ps;
 
-const useStyles = makeStyles(styles);
-
 export default function Admin({ children, ...rest }) {
   // used for checking current route
   const router = useRouter();
   // styles
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   // ref to help us initialize PerfectScrollbar on windows devices
   const mainPanel = React.createRef();
