@@ -1,4 +1,4 @@
-## [1.1.0] 2021-02-
+## [1.1.0] 2021-02-01
 ### Bug fixing
 - https://github.com/creativetimofficial/ct-nextjs-material-dashboard-pro/issues/2
 ### Major style changes
