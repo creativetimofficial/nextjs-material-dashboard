@@ -7,7 +7,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 // core components
 import { infoColor, title } from "assets/jss/nextjs-material-dashboard.js";
 
-const useStyles = makeStyles({
+const styles = {
   progress: {
     color: infoColor,
     width: "6rem !important",
@@ -29,9 +29,10 @@ const useStyles = makeStyles({
     ...title,
     color: "#FFFFFF",
   },
-});
+};
 
 export default function PageChange(props) {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <div>
