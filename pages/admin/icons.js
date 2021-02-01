@@ -14,9 +14,8 @@ import CardBody from "components/Card/CardBody.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/views/iconsStyle.js";
 
-const useStyles = makeStyles(styles);
-
 function Icons() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <GridContainer>

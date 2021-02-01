@@ -61,9 +61,8 @@ let server = [
   "از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند؟",
 ];
 
-const useStyles = makeStyles(styles);
-
 function RTLPage() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <div>

@@ -52,9 +52,8 @@ const styles = {
   },
 };
 
-const useStyles = makeStyles(styles);
-
 function TypographyPage() {
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   return (
     <Card>

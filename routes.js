@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* * NextJS Material Dashboard v1.0.0 based on Material Dashboard React v1.9.0
+* * NextJS Material Dashboard v1.1.0 based on Material Dashboard React v1.9.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/nextjs-material-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-dashboard/blob/master/LICENSE.md)
 
 * Coded by Creative Tim

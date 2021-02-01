@@ -22,10 +22,9 @@ import useWindowSize from "components/Hooks/useWindowSize.js";
 
 import styles from "assets/jss/nextjs-material-dashboard/components/headerLinksStyle.js";
 
-const useStyles = makeStyles(styles);
-
 export default function AdminNavbarLinks() {
   const size = useWindowSize();
+  const useStyles = makeStyles(styles);
   const classes = useStyles();
   const [openNotification, setOpenNotification] = React.useState(null);
   const [openProfile, setOpenProfile] = React.useState(null);
