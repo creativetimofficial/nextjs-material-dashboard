@@ -242,16 +242,23 @@ footer ul li a:hover {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
+  cursor: pointer;
   position: fixed;
   top: 180px;
-  right: 0;
+  right: -15px;
   width: 64px;
   background: rgba(0, 0, 0, 0.3);
   z-index: 1031;
   border-radius: 8px 0 0 8px;
   text-align: center;
   top: 120px;
-  .badge-primary-background-color: #9c27b0;
+  /* badge-primary-background-color: #9c27b0;  */
+}
+.fixed-plugin:hover {
+  background: rgba(39, 39, 39, 0.3);
+  right: 0px;
+  transition: ease-in;
+  transition-duration: 300ms;
 }
 
 .fixed-plugin .SocialMediaShareButton,
