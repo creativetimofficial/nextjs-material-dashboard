@@ -121,12 +121,12 @@ function MasterCard({ color, number, holder, expires }) {
               </MDTypography>
             </MDBox>
           </MDBox>
-          <MDBox display="flex" justifyContent="flex-end" width="20%">
+          <MDBox display="flex" position="relative" justifyContent="flex-end" width="20%">
             <MDBox width="60%" mt={1}>
               <Image
                 src={masterCardLogo}
                 alt="master card"
-                layout="responsive"
+                style={{ width: "100%", height: "100%", display: "block" }}
               />
             </MDBox>
           </MDBox>

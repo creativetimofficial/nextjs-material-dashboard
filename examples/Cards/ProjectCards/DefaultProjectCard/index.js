@@ -80,9 +80,9 @@ function DefaultProjectCard({
             <Image
               src={image}
               alt={title}
-              layout="responsive"
               quality={100}
               sizes="100%"
+              style={{ width: "100%", height: "100%", display: "block" }}
             />
           ) : (
             image

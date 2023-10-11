@@ -72,7 +72,8 @@ function PaymentMethod() {
                 <Image
                   src={masterCardLogo}
                   alt="master card"
-                  layout="responsive"
+                  style={{ width: "100%", height: "100%", display: "block" }}
+
                 />
               </MDBox>
               <MDTypography variant="h6" fontWeight="medium">
@@ -104,7 +105,8 @@ function PaymentMethod() {
               }}
             >
               <MDBox width="10%" mr={2}>
-                <Image src={visaLogo} alt="visa card" layout="responsive" />
+                <Image src={visaLogo} alt="visa card" style={{ width: "100%", height: "100%", display: "block" }}
+                />
               </MDBox>
               <MDTypography variant="h6" fontWeight="medium">
                 ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;5248

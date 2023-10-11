@@ -16,7 +16,6 @@ Coded by www.creative-tim.com
 import { useEffect, useState } from "react";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 // prop-types is a library for typechecking of props.
@@ -141,7 +140,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
             open={openNestedCollapse === key}
             onClick={({ currentTarget }) =>
               openNestedCollapse === key &&
-              currentTarget.classList.contains("MuiListItem-root")
+                currentTarget.classList.contains("MuiListItem-root")
                 ? setOpenNestedCollapse(false)
                 : setOpenNestedCollapse(key)
             }
