@@ -116,11 +116,11 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           <SidenavItem name={name} nested />
         </MuiLink>
       ) : (
-        <Link href={route} key={key} sx={{ textDecoration: "none" }}>
-          <a>
-            <SidenavItem name={name} active={route === pathname} nested />
-          </a>
-        </Link>
+        (<Link href={route} key={key} sx={{ textDecoration: "none" }}>
+
+          <SidenavItem name={name} active={route === pathname} nested />
+
+        </Link>)
       )
     );
 
@@ -161,15 +161,15 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
             <SidenavItem color={color} name={name} active={key === itemName} />
           </MuiLink>
         ) : (
-          <Link href={route} key={key} sx={{ textDecoration: "none" }}>
-            <a>
-              <SidenavItem
-                color={color}
-                name={name}
-                active={key === itemName}
-              />
-            </a>
-          </Link>
+          (<Link href={route} key={key} sx={{ textDecoration: "none" }}>
+
+            <SidenavItem
+              color={color}
+              name={name}
+              active={key === itemName}
+            />
+
+          </Link>)
         );
       }
       return <SidenavList key={key}>{returnValue}</SidenavList>;
@@ -200,18 +200,18 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           );
         } else if (noCollapse && route) {
           returnValue = (
-            <Link href={route} key={key} passHref>
-              <a>
-                <SidenavCollapse
-                  name={name}
-                  icon={icon}
-                  noCollapse={noCollapse}
-                  active={key === collapseName}
-                >
-                  {collapse ? renderCollapse(collapse) : null}
-                </SidenavCollapse>
-              </a>
-            </Link>
+            (<Link href={route} key={key} passHref>
+
+              <SidenavCollapse
+                name={name}
+                icon={icon}
+                noCollapse={noCollapse}
+                active={key === collapseName}
+              >
+                {collapse ? renderCollapse(collapse) : null}
+              </SidenavCollapse>
+
+            </Link>)
           );
         } else {
           returnValue = (
@@ -285,33 +285,33 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           </MDTypography>
         </MDBox>
         <Link href="/">
-          <a>
-            <MDBox display="flex" alignItems="center">
-              {brand && brand.src ? (
-                <MDBox
-                  component="img"
-                  src={brand.src}
-                  alt={brandName}
-                  width="1.75rem"
-                />
-              ) : (
-                brand
-              )}
+
+          <MDBox display="flex" alignItems="center">
+            {brand && brand.src ? (
               <MDBox
-                width={!brandName && "100%"}
-                sx={(theme) => sidenavLogoLabel(theme, { miniSidenav })}
+                component="img"
+                src={brand.src}
+                alt={brandName}
+                width="1.75rem"
+              />
+            ) : (
+              brand
+            )}
+            <MDBox
+              width={!brandName && "100%"}
+              sx={(theme) => sidenavLogoLabel(theme, { miniSidenav })}
+            >
+              <MDTypography
+                component="h6"
+                variant="button"
+                fontWeight="medium"
+                color={textColor}
               >
-                <MDTypography
-                  component="h6"
-                  variant="button"
-                  fontWeight="medium"
-                  color={textColor}
-                >
-                  {brandName}
-                </MDTypography>
-              </MDBox>
+                {brandName}
+              </MDTypography>
             </MDBox>
-          </a>
+          </MDBox>
+
         </Link>
       </MDBox>
       <Divider

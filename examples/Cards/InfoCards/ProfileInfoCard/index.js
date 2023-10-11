@@ -107,13 +107,13 @@ function ProfileInfoCard({ title, description, info, social, action, shadow }) {
           {title}
         </MDTypography>
         <Link href={action.route}>
-          <a>
-            <MDTypography variant="body2" color="secondary">
-              <Tooltip title={action.tooltip} placement="top">
-                <Icon>edit</Icon>
-              </Tooltip>
-            </MDTypography>
-          </a>
+
+          <MDTypography variant="body2" color="secondary">
+            <Tooltip title={action.tooltip} placement="top">
+              <Icon>edit</Icon>
+            </Tooltip>
+          </MDTypography>
+
         </Link>
       </MDBox>
       <MDBox p={2}>

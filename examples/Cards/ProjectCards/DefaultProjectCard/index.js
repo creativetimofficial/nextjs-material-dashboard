@@ -100,13 +100,13 @@ function DefaultProjectCard({
         </MDTypography>
         <MDBox mb={1}>
           {action.type === "internal" ? (
-            <Link href={action.route}>
-              <a>
-                <MDTypography variant="h5" textTransform="capitalize">
-                  {title}
-                </MDTypography>
-              </a>
-            </Link>
+            (<Link href={action.route}>
+
+              <MDTypography variant="h5" textTransform="capitalize">
+                {title}
+              </MDTypography>
+
+            </Link>)
           ) : (
             <MDTypography
               component="a"
@@ -131,13 +131,13 @@ function DefaultProjectCard({
           alignItems="center"
         >
           {action.type === "internal" ? (
-            <Link href={action.route}>
-              <a>
-                <MDButton variant="outlined" size="small" color={action.color}>
-                  {action.label}
-                </MDButton>
-              </a>
-            </Link>
+            (<Link href={action.route}>
+
+              <MDButton variant="outlined" size="small" color={action.color}>
+                {action.label}
+              </MDButton>
+
+            </Link>)
           ) : (
             <MDButton
               component="a"

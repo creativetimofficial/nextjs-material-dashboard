@@ -125,12 +125,12 @@ function DefaultPricingCard({
           {action.type === "internal" ? (
             <MDBox mt={3}>
               <Link href={action.route}>
-                <a>
-                  <MDButton variant="gradient" color={action.color} fullWidth>
-                    {action.label}&nbsp;
-                    <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-                  </MDButton>
-                </a>
+
+                <MDButton variant="gradient" color={action.color} fullWidth>
+                  {action.label}&nbsp;
+                  <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+                </MDButton>
+
               </Link>
             </MDBox>
           ) : (

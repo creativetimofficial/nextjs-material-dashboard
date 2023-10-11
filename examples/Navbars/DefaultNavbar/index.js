@@ -178,33 +178,31 @@ function DefaultNavbar({ routes, brand, transparent, light, action }) {
                       {col.collapse.map((item) =>
                         item.route ? (
                           <Link key={item.name} href={item.route}>
-                            <a>
-                              <MDTypography
-                                minWidth="11.25rem"
-                                display="block"
-                                variant="button"
-                                color="text"
-                                textTransform="capitalize"
-                                fontWeight="regular"
-                                py={0.625}
-                                px={2}
-                                sx={({
-                                  palette: { grey, dark },
-                                  borders: { borderRadius },
-                                }) => ({
-                                  borderRadius: borderRadius.md,
-                                  cursor: "pointer",
-                                  transition: "all 300ms linear",
+                            <MDTypography
+                              minWidth="11.25rem"
+                              display="block"
+                              variant="button"
+                              color="text"
+                              textTransform="capitalize"
+                              fontWeight="regular"
+                              py={0.625}
+                              px={2}
+                              sx={({
+                                palette: { grey, dark },
+                                borders: { borderRadius },
+                              }) => ({
+                                borderRadius: borderRadius.md,
+                                cursor: "pointer",
+                                transition: "all 300ms linear",
 
-                                  "&:hover": {
-                                    backgroundColor: grey[200],
-                                    color: dark.main,
-                                  },
-                                })}
-                              >
-                                {item.name}
-                              </MDTypography>
-                            </a>
+                                "&:hover": {
+                                  backgroundColor: grey[200],
+                                  color: dark.main,
+                                },
+                              })}
+                            >
+                              {item.name}
+                            </MDTypography>
                           </Link>
                         ) : (
                           <MDTypography
@@ -350,7 +348,7 @@ function DefaultNavbar({ routes, brand, transparent, light, action }) {
 
           return item.route ? (
             <Link key={item.name} href={item.route}>
-              <a>{itemTemplate}</a>
+              {itemTemplate}
             </Link>
           ) : (
             <MuiLink
@@ -422,91 +420,91 @@ function DefaultNavbar({ routes, brand, transparent, light, action }) {
   const renderNestedRoutes = routes.map(({ collapse, columns }) =>
     collapse && !columns
       ? collapse.map(({ name: parentName, collapse: nestedCollapse }) => {
-          let template;
+        let template;
 
-          if (parentName === nestedDropdownName) {
-            template =
-              nestedCollapse &&
-              nestedCollapse.map((item) => {
-                const nestedItemTemplate = (
-                  <MDTypography
-                    key={item.name}
-                    display="flex"
-                    justifyContent="space-between"
-                    alignItems="center"
-                    variant="button"
-                    textTransform="capitalize"
-                    minWidth={item.description ? "14rem" : "12rem"}
-                    color={item.description ? "dark" : "text"}
-                    fontWeight={item.description ? "bold" : "regular"}
-                    py={item.description ? 1 : 0.625}
-                    px={2}
-                    sx={({
-                      palette: { grey, dark },
-                      borders: { borderRadius },
-                    }) => ({
-                      borderRadius: borderRadius.md,
-                      cursor: "pointer",
-                      transition: "all 300ms linear",
+        if (parentName === nestedDropdownName) {
+          template =
+            nestedCollapse &&
+            nestedCollapse.map((item) => {
+              const nestedItemTemplate = (
+                <MDTypography
+                  key={item.name}
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  variant="button"
+                  textTransform="capitalize"
+                  minWidth={item.description ? "14rem" : "12rem"}
+                  color={item.description ? "dark" : "text"}
+                  fontWeight={item.description ? "bold" : "regular"}
+                  py={item.description ? 1 : 0.625}
+                  px={2}
+                  sx={({
+                    palette: { grey, dark },
+                    borders: { borderRadius },
+                  }) => ({
+                    borderRadius: borderRadius.md,
+                    cursor: "pointer",
+                    transition: "all 300ms linear",
 
-                      "&:hover": {
-                        backgroundColor: grey[200],
+                    "&:hover": {
+                      backgroundColor: grey[200],
+                      color: dark.main,
+
+                      "& *": {
                         color: dark.main,
-
-                        "& *": {
-                          color: dark.main,
-                        },
                       },
-                    })}
-                  >
-                    {item.description ? (
-                      <MDBox>
-                        {item.name}
-                        <MDTypography
-                          display="block"
-                          variant="button"
-                          color="text"
-                          fontWeight="regular"
-                          sx={{ transition: "all 300ms linear" }}
-                        >
-                          {item.description}
-                        </MDTypography>
-                      </MDBox>
-                    ) : (
-                      item.name
-                    )}
-                    {item.collapse && (
-                      <Icon
-                        fontSize="small"
-                        sx={{
-                          fontWeight: "normal",
-                          verticalAlign: "middle",
-                          mr: -0.5,
-                        }}
+                    },
+                  })}
+                >
+                  {item.description ? (
+                    <MDBox>
+                      {item.name}
+                      <MDTypography
+                        display="block"
+                        variant="button"
+                        color="text"
+                        fontWeight="regular"
+                        sx={{ transition: "all 300ms linear" }}
                       >
-                        keyboard_arrow_right
-                      </Icon>
-                    )}
-                  </MDTypography>
-                );
+                        {item.description}
+                      </MDTypography>
+                    </MDBox>
+                  ) : (
+                    item.name
+                  )}
+                  {item.collapse && (
+                    <Icon
+                      fontSize="small"
+                      sx={{
+                        fontWeight: "normal",
+                        verticalAlign: "middle",
+                        mr: -0.5,
+                      }}
+                    >
+                      keyboard_arrow_right
+                    </Icon>
+                  )}
+                </MDTypography>
+              );
 
-                return item.route ? (
-                  <Link key={item.name} href={item.route}>
-                    <a>{nestedItemTemplate}</a>
-                  </Link>
-                ) : (
-                  <MuiLink
-                    key={item.name}
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  ></MuiLink>
-                );
-              });
-          }
+              return item.route ? (
+                <Link key={item.name} href={item.route}>
+                  {nestedItemTemplate}
+                </Link>
+              ) : (
+                <MuiLink
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                ></MuiLink>
+              );
+            });
+        }
 
-          return template;
-        })
+        return template;
+      })
       : null
   );
 
@@ -576,21 +574,20 @@ function DefaultNavbar({ routes, brand, transparent, light, action }) {
           alignItems="center"
         >
           <Link href="/">
-            <a>
-              <MDBox
-                py={transparent ? 1.5 : 0.75}
-                lineHeight={1}
-                pl={{ xs: 0, lg: 1 }}
+
+            <MDBox
+              py={transparent ? 1.5 : 0.75}
+              lineHeight={1}
+              pl={{ xs: 0, lg: 1 }}
+            >
+              <MDTypography
+                variant="button"
+                fontWeight="bold"
+                color={light ? "white" : "dark"}
               >
-                <MDTypography
-                  variant="button"
-                  fontWeight="bold"
-                  color={light ? "white" : "dark"}
-                >
-                  {brand}
-                </MDTypography>
-              </MDBox>
-            </a>
+                {brand}
+              </MDTypography>
+            </MDBox>
           </Link>
           <MDBox
             color="inherit"
@@ -604,16 +601,15 @@ function DefaultNavbar({ routes, brand, transparent, light, action }) {
             (action.type === "internal" ? (
               <MDBox display={{ xs: "none", lg: "inline-block" }}>
                 <Link href={action.route}>
-                  <a>
-                    <MDButton
-                      variant="gradient"
-                      color={action.color ? action.color : "dark"}
-                      size="small"
-                      passHref
-                    >
-                      {action.label}
-                    </MDButton>
-                  </a>
+                  <MDButton
+                    variant="gradient"
+                    color={action.color ? action.color : "dark"}
+                    size="small"
+                    passHref
+                  >
+                    {action.label}
+                  </MDButton>
+
                 </Link>
               </MDBox>
             ) : (

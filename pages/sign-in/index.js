@@ -129,16 +129,16 @@ function Basic() {
               <MDTypography variant="button" color="text">
                 Don&apos;t have an account?{" "}
                 <Link href="/authentication/sign-up/cover">
-                  <a>
-                    <MDTypography
-                      variant="button"
-                      color="dark"
-                      fontWeight="medium"
-                      textGradient
-                    >
-                      Sign up
-                    </MDTypography>
-                  </a>
+
+                  <MDTypography
+                    variant="button"
+                    color="dark"
+                    fontWeight="medium"
+                    textGradient
+                  >
+                    Sign up
+                  </MDTypography>
+
                 </Link>
               </MDTypography>
             </MDBox>

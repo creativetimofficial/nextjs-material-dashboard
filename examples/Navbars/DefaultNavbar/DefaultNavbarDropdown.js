@@ -91,16 +91,17 @@ function DefaultNavbarDropdown({
         {...(href && linkComponent)}
       >
         {route ? (
-          <a style={{ display: "flex", alignItems: "center" }}>{template}</a>
+          <>{template}</>
         ) : (
           template
         )}
-      </MDBox>
+      </MDBox >
       {children && (
         <Collapse in={Boolean(collapseStatus)} timeout={400} unmountOnExit>
           {children}
         </Collapse>
-      )}
+      )
+      }
     </>
   );
 }
