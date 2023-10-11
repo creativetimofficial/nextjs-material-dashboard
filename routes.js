@@ -55,6 +55,8 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
     component: <Dashboard />,
+    noCollapse: true,
+
   },
   {
     type: "collapse",
@@ -63,6 +65,8 @@ const routes = [
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
     component: <Tables />,
+    noCollapse: true,
+
   },
   {
     type: "collapse",
@@ -71,6 +75,7 @@ const routes = [
     icon: <Icon fontSize="small">receipt_long</Icon>,
     route: "/billing",
     component: <Billing />,
+    noCollapse: true,
   },
   {
     type: "collapse",
@@ -79,6 +84,8 @@ const routes = [
     icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
     route: "/rtl",
     component: <RTL />,
+    noCollapse: true,
+
   },
   {
     type: "collapse",
@@ -86,7 +93,8 @@ const routes = [
     key: "notifications",
     icon: <Icon fontSize="small">notifications</Icon>,
     route: "/notifications",
-    collapse: [],
+    noCollapse: true,
+
   },
   {
     type: "collapse",
@@ -95,6 +103,7 @@ const routes = [
     icon: <Icon fontSize="small">person</Icon>,
     route: "/profile",
     component: <Profile />,
+    noCollapse: true,
   },
   {
     type: "collapse",
@@ -103,6 +112,7 @@ const routes = [
     icon: <Icon fontSize="small">login</Icon>,
     route: "/sign-in",
     component: <SignIn />,
+    noCollapse: true,
   },
   {
     type: "collapse",
@@ -111,6 +121,7 @@ const routes = [
     icon: <Icon fontSize="small">assignment</Icon>,
     route: "/sign-up",
     component: <SignUp />,
+    noCollapse: true,
   },
 ];
 
