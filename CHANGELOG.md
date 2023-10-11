@@ -1,7 +1,10 @@
-## [2.0.0] 2023-05-25
+## [2.0.0] 2023-10-11
 
-- Migrate to Next 12
 - Update design to match PRO version
+- Upgrade to NextJS `13.5.4`
+- Upgrade to React `18.2.0`
+- Upgrade `Chart.js` to `v4.4.0`
+- Upgrade `react-chartjs-2` to `v5.2.0`
 - Update dependencies
 
 ## [1.1.0] 2021-02-01
