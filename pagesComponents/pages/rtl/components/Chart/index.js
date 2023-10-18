@@ -19,6 +19,17 @@ import { useRef, useEffect, useState, useMemo } from "react";
 import PropTypes from "prop-types";
 
 // react-chartjs-2 components
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Filler,
+  Legend,
+} from "chart.js";
 import { Line } from "react-chartjs-2";
 
 // @mui material components
@@ -28,14 +39,22 @@ import Card from "@mui/material/Card";
 import MDBox from "/components/MDBox";
 import MDTypography from "/components/MDTypography";
 
-// NextJS Material Dashboard 2 PRO helper functions
-import gradientChartLine from "/assets/theme/functions/gradientChartLine";
-
 // Chart configurations
-import configs from "/pagesComponents/pages/rtl/components/Chart/configs";
+import configs from "./configs";
 
 // NextJS Material Dashboard 2 PRO base styles
 import colors from "/assets/theme/base/colors";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Filler,
+  Legend
+);
 
 function Chart({ title, count, percentage, chart }) {
   const chartRef = useRef(null);
@@ -45,25 +64,26 @@ function Chart({ title, count, percentage, chart }) {
   useEffect(() => {
     const chartDatasets = chart.datasets.map((dataset) => ({
       ...dataset,
+      fill: true,
       tension: 0.4,
       pointRadius: 0,
       borderWidth: 2,
       borderColor: colors[dataset.color].main,
       fill: true,
       maxBarThickness: 6,
-      backgroundColor: gradientChartLine(
-        chartRef.current.children[0],
-        colors[dataset.color].main,
-        0.02
-      ),
+      borderColor: colors.dark.main,
+      backgroundColor: "rgba(66, 66, 74, 0.1)",
     }));
 
     setChartData(configs(chart.labels, chartDatasets));
   }, [chart]);
 
   return (
-    <Card>
-      <MDBox p={2} lineHeight={1}>
+    <Card
+      style={{
+        overflow: "hidden",
+      }}
+    >      <MDBox p={2} lineHeight={1}>
         <MDTypography
           variant="button"
           textTransform="capitalize"
@@ -85,8 +105,11 @@ function Chart({ title, count, percentage, chart }) {
       </MDBox>
       {useMemo(
         () => (
-          <MDBox ref={chartRef} sx={{ height: "5.375rem" }}>
-            <Line data={data} options={options} />
+          <MDBox
+            ref={chartRef}
+            sx={{ height: "5.375rem", transform: "scale(1.02)" }}
+          >
+            {data && <Line data={data} options={options} />}
           </MDBox>
         ),
         // eslint-disable-next-line react-hooks/exhaustive-deps
